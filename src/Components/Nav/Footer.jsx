@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import { LogoIcon } from '../Icon/Icon'
+import { COMPANY } from '../../config/constants'
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                         <Col className='mb-4 mb-lg-0' lg={3}>
                             <div className="flex items-center gap-2 mb-3">
                                 <LogoIcon color='#FEC51C' />
-                                <span className='font-medium text__20 text-Myellow'>Foodex</span>
+                                <span className='font-medium text__20 text-Myellow'>{COMPANY.NAME}</span>
                             </div>
                             <p className='text__16'>Our user-friendly food delivery platform is designed to bring.</p>
                         </Col>

@@ -4,6 +4,8 @@ import { LogoIcon } from '../../Components/Icon/Icon'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Form } from 'react-bootstrap'
+import { COMPANY } from '../../config/constants'
+
 const Login = () => {
     const [tooglePassword, settooglePassword] = useState(true)
     const [toogleChecklist, settoogleChecklist] = useState(false)
@@ -14,7 +16,7 @@ const Login = () => {
             <div className="text-center mb-10">
                 <div className="flex items-center gap-2 mb-3 justify-center">
                     <LogoIcon color='#FEC51C' />
-                    <span className='font-medium text__20 text-Mblack'>Foodex</span>
+                    <span className='font-medium text__20 text-Mblack'>{COMPANY.name}</span>
                 </div>
                 <h4 className='font-medium text__32 mb-2'>Good to see you again 👋</h4>
                 <p>Don’t have an account? <NavLink to="/auth/signup" className='text-Myellow '>Sign Up</NavLink></p>

@@ -5,7 +5,7 @@ import 'react-phone-input-2/lib/style.css'
 import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 import VerificationInput from 'react-verification-input'
-
+import ResetPassword from '../../Pages/Auth/ResetPassword'
 export const ModalStepStarted = ({ show, handleClose, handleShow, StatusModal, setStatusModal }) => {
     const onEventClick = (StatusModal) => {
         handleClose()
@@ -42,8 +42,8 @@ export const StepModal = ({ show, handleClose, handleShow, StatusModal, setStatu
             case "Verification":
                 return <Verification setStatusModal={(e) => setStatusModal(e)} onEventClick={(e) => onEventClick(e)} handleClose={() => handleClose()} />
                 break;
-            case "RisetPassword":
-                return <RisetPassword setStatusModal={(e) => setStatusModal(e)} onEventClick={(e) => onEventClick(e)} handleClose={() => handleClose()} />
+            case "ResetPassword":
+                return <ResetPassword setStatusModal={(e) => setStatusModal(e)} onEventClick={(e) => onEventClick(e)} handleClose={() => handleClose()} />
                 break;
             case "Success":
                 return <Success onEventClick={(e) => onEventClick(e)} handleClose={() => handleClose()} setStatusModal={(e) => setStatusModal(e)} />

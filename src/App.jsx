@@ -21,9 +21,10 @@ import DetailRestaurant from './Pages/DetailRestaurant';
 import Login from './Pages/Auth/Login';
 import Signup from './Pages/Auth/Signup';
 import ForgotPassword from './Pages/Auth/ForgotPassword';
-import RisetPassword from './Pages/Auth/RisetPassword';
+import ResetPassword from './Pages/Auth/ResetPassword';
 import NewPasswordForm from './Pages/Auth/NewPassword';
 import Payment from './Pages/Payment';
+import PlanEventForm from './Pages/PlanEventForm';
 
 const App = () => {
   let location = useLocation();
@@ -33,9 +34,10 @@ const App = () => {
   return (
     <Routes>
       <Route path="" element={<DefaultLayout />}>
-        <Route index element={<Homepage />} />
+        <Route path="home"element={<Homepage />} />
         <Route path="about" element={<About />} />
         <Route path="faq" element={<Faq />} />
+        <Route index element={<PlanEventForm />} />
         <Route path="contact" element={<Contact />} />
         <Route path="privacy" element={<Privacy />} />
         <Route path="terms" element={<Terms />} />
@@ -48,7 +50,7 @@ const App = () => {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="forgot-password" element={<ForgotPassword />} />
-        <Route path="riset-password" element={<RisetPassword />} />
+        <Route path="reset-password" element={<ResetPassword />} />
         <Route path="new-password" element={<NewPasswordForm />} />
       </Route>
     </Routes>

@@ -4,6 +4,7 @@ import { LogoIcon } from '../../Components/Icon/Icon'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Form } from 'react-bootstrap'
+import { COMPANY } from '../../config/constants'
 
 const Signup = () => {
     const [tooglePassword, settooglePassword] = useState(true)
@@ -13,7 +14,7 @@ const Signup = () => {
             <div className="text-center mb-10">
                 <div className="flex items-center gap-2 mb-3 justify-center">
                     <LogoIcon color='#FEC51C' />
-                    <span className='font-medium text__20 text-Mblack'>Foodex</span>
+                    <span className='font-medium text__20 text-Mblack'>{COMPANY.name}</span>
                 </div>
                 <h4 className='font-medium text__32 mb-2'>Create an account to continue</h4>
                 <p>It’s free to create an account and get your event live. <br className='hidden xl:block' />

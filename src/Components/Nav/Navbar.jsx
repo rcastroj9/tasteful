@@ -5,6 +5,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { LogoIcon } from '../Icon/Icon'
+import { COMPANY } from '../../config/constants'
 
 const Navbar = () => {
 
@@ -30,7 +31,7 @@ const Navbar = () => {
                 <Container className='h-full'>
                     <ul className='list-none p-0 m-0 flex items-center flex-wrap gap-4 text-[20px] w-full'>
                         <li className='w-full'>
-                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Home</NavLink>
+                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Plan Event</NavLink>
                         </li>
                         <li className='w-full'>
                             <NavLink to="/about" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>About</NavLink>
@@ -56,14 +57,14 @@ const Navbar = () => {
                     <NavLink to="/" className=''>
                         <div className="flex items-center gap-2">
                             <LogoIcon />
-                            <span className={'font-medium text__20 text-Mblack'}>Foodex</span>
+                            <span className={'font-medium text__20 text-Mblack'}>{COMPANY.name}</span>
                         </div>
                     </NavLink>
 
 
                     <ul className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 list-none p-0 m-0 hidden lg:flex items-center gap-6 text__16'>
                         <li>
-                            <NavLink to="/" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Home</NavLink>
+                            <NavLink to="/" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Plan Event</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>About</NavLink>

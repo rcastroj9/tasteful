@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { LogoIcon } from '../../Components/Icon/Icon'
 import { Form } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import { COMPANY } from '../../config/constants'
 
 const ForgotPassword = () => {
     return (
@@ -10,7 +11,7 @@ const ForgotPassword = () => {
             <div className="text-center mb-10">
                 <div className="flex items-center gap-2 mb-3 justify-center">
                     <LogoIcon color='#FEC51C' />
-                    <span className='font-medium text__20 text-Mblack'>Foodex</span>
+                    <span className='font-medium text__20 text-Mblack'>{COMPANY.name}</span>
                 </div>
                 <h4 className='font-medium text__32 mb-2'>Forgot your password?</h4>
                 <p>We'll send you an email with a link to reset your password.</p>
@@ -22,7 +23,7 @@ const ForgotPassword = () => {
                 <Form.Control type="email" placeholder="e.g sanandreas@gmail.com" className='font-medium text__14 bg-[#FAFAFA] h-[54px] rounded-[20px] px-3 outline-none shadow-none focus:outline-none focus:shadow-none border-[#F5F5F5] focus:border-[#F5F5F5] focus:bg-[#FAFAFA]' />
             </Form.Group>
 
-            <NavLink to="/auth/riset-password" className='inline-block cursor-pointer text-center font-medium text__16 text-white !py-[15px] bg-Mblack !border-Mblack btnClass w-full'>Send me a reset link</NavLink>
+            <NavLink to="/auth/reset-password" className='inline-block cursor-pointer text-center font-medium text__16 text-white !py-[15px] bg-Mblack !border-Mblack btnClass w-full'>Send me a reset link</NavLink>
         </Fragment>
     )
 }

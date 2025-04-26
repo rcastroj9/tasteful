@@ -4,14 +4,15 @@ import { LogoIcon } from '../../Components/Icon/Icon'
 import { Form } from 'react-bootstrap'
 import VerificationInput from 'react-verification-input'
 import { NavLink } from 'react-router-dom'
+import { COMPANY } from '../../config/constants'
 
-const RisetPassword = () => {
+const ResetPassword = () => {
     return (
         <Fragment>
             <div className="text-center mb-10">
                 <div className="flex items-center gap-2 mb-3 justify-center">
                     <LogoIcon color='#FEC51C' />
-                    <span className='font-medium text__20 text-Mblack'>Foodex</span>
+                    <span className='font-medium text__20 text-Mblack'>{COMPANY.name}</span>
                 </div>
                 <h4 className='font-medium text__32 mb-2'>Reset Password</h4>
                 <p>Recover your account password</p>
@@ -32,4 +33,4 @@ const RisetPassword = () => {
     )
 }
 
-export default RisetPassword
+export default ResetPassword
