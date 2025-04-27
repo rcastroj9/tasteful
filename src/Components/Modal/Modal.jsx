@@ -5,7 +5,7 @@ import 'react-phone-input-2/lib/style.css'
 import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 import VerificationInput from 'react-verification-input'
-import ResetPassword from '../../Pages/Auth/ResetPassword'
+
 export const ModalStepStarted = ({ show, handleClose, handleShow, StatusModal, setStatusModal }) => {
     const onEventClick = (StatusModal) => {
         handleClose()
@@ -246,14 +246,14 @@ const Verification = ({ onEventClick, setStatusModal, handleClose }) => {
                 characterSelected: "character--selected",
             }} />
         </div>
-        <div onClick={() => onEventClick("RisetPassword")} className='inline-block cursor-pointer text-center font-medium text__16 text-white !py-[15px] bg-Myellow !border-Myellow btnClass w-full'>Next</div>
+        <div onClick={() => onEventClick("ResetPassword")} className='inline-block cursor-pointer text-center font-medium text__16 text-white !py-[15px] bg-Myellow !border-Myellow btnClass w-full'>Next</div>
 
         <a href="#!" className='font-medium text__16 text-center w-full text-Myellow inline-block mt-4'>Resend</a>
     </Fragment >
 }
 
 
-const RisetPassword = ({ onEventClick, setStatusModal, handleClose }) => {
+const ResetPassword = ({ onEventClick, setStatusModal, handleClose }) => {
     const [statusPassword, setstatusPassword] = useState(false)
 
     const [tooglePassword, settooglePassword] = useState(true)

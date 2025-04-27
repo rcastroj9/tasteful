@@ -93,7 +93,7 @@ const About = () => {
 
             <SecTestimonial />
 
-            <SecGetstart title={"Join Our Foodie Community"} BtnLink={"/login"} btnTitle={"Join Now"} />
+            <SecGetstart title={"Join Our Foodie Community"} BtnLink={"/auth/login"} btnTitle={"Join Now"} />
 
         </Fragment>
     )

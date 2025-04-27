@@ -6,6 +6,8 @@ export const COMPANY = {
     }
 };
 
+export const MAX_QUOTE = 1000; // Maximum quote value for percentage calculation
+
 export const FORM_CONTENT = {
     title: "Plan Your Event",
     description: "Fill out the form below to start planning your perfect event. Our team will help bring your vision to life.",

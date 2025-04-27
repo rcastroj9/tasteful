@@ -31,7 +31,7 @@ const Navbar = () => {
                 <Container className='h-full'>
                     <ul className='list-none p-0 m-0 flex items-center flex-wrap gap-4 text-[20px] w-full'>
                         <li className='w-full'>
-                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Plan Event</NavLink>
+                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Plan Your Event</NavLink>
                         </li>
                         <li className='w-full'>
                             <NavLink to="/about" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>About</NavLink>

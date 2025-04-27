@@ -6,6 +6,7 @@ import "react-multi-date-picker/styles/layouts/prime.css"
 import FormField from '../Components/Form/FormField'
 import FormCheckList from '../Components/Form/FormCheckList'
 import { COMPANY, FORM_CONTENT } from '../config/constants'
+import { NavLink } from 'react-router-dom'
 
 const PlanEventForm = () => {
     const [selectedDates, setSelectedDates] = useState([])
@@ -134,9 +135,28 @@ const PlanEventForm = () => {
                                 </Form.Group>
 
                                 <FormCheckList />
-
-                                <button type='submit' className='inline-block cursor-pointer text-center font-medium text__16 text-white !py-[15px] !px-[28px] bg-Myellow !border-Myellow btnClass'>Submit</button>
+                            
                             </Col>
+                            <div>
+                                <section className='bg-[#FFFFF]'>
+                                    <Container>
+                                        <div className="w-full bg-Myellow px-20 py-[4rem] md:py-[6rem] text-center rounded-[32px] relative">
+                                            <img src="./../images/Background Pattern.png" className='absolute w-full h-full left-0 top-0' alt="" />
+                                            <div className="relative z-2">
+                                                <p className='text-Mblack text__16 mb-8 md:mb-12'> Don’t worry, we’ve got you covered! We’ll gather the best quotes that fit your budget and all your needs—just sit back and we’ll be in touch with you soon. </p>
+                                                <div className="text-center">
+                                                    <div className="inline-block relative">
+                                                        <NavLink to="/eventsFound" className='font-medium text__16 inline-block cursor-pointer font-medium text__14 text-Mblack btnClass !py-[16px] bg-white'>Help me plan!</NavLink>
+                                                        <img className='absolute top-1/2 -right-[6rem] lg:-right-[9rem] w-[5rem] lg:w-auto' src="./../images/arrowws.svg" alt="" />
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </Container>
+                                </section>
+                            </div>
                         </Row>
                     </div>
                 </Container>

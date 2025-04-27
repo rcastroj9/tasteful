@@ -1,8 +1,8 @@
 import React from 'react'
 import { Fragment } from 'react'
 import Slider from 'react-slick'
-import { CardTestimonial } from '../Card/Card'
 import { Container } from 'react-bootstrap'
+import { CardEventTestimonial } from '../Card/EventCard'
 
 const SecTestimonial = () => {
     const settings = {
@@ -29,39 +29,39 @@ const SecTestimonial = () => {
     };
     return (
         <Fragment>
-            <section className='bg-[#F8F8F8]'>
+            <section className='bg-[#F8F8F8] rounded-xl m-8'>
                 <Container>
                     <div className="mb-10 text-center">
-                        <h3 className='mb-10 font-medium text__48 mb-2'>What our customers say about us.</h3>
+                        <h3 className='mb-10 font-medium text__48 mb-2'>Customer Reviews</h3>
                     </div>
 
-                    <Slider {...settings} className="-mx-[15px] sliderDots">
+                    <Slider {...settings} className="-mx-[5px] sliderDots m-4">
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                         <div className="px-[15px]">
-                            <CardTestimonial />
+                            <CardEventTestimonial />
                         </div>
                     </Slider>
                 </Container>

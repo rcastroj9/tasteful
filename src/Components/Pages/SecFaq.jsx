@@ -9,26 +9,26 @@ const SecFaq = () => {
             title: "How does Foodie Express work?",
             desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
         },
-        {
-            title: "What cuisines are available on Foodie Express?",
-            desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
-        },
-        {
-            title: "How can I pay for my order?",
-            desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
-        },
-        {
-            title: "Is there a minimum order amount?",
-            desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
-        },
-        {
-            title: "How do I track my order?",
-            desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
-        },
-        {
-            title: "Can I schedule my delivery for later?",
-            desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
-        },
+        // {
+        //     title: "What cuisines are available on Foodie Express?",
+        //     desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
+        // },
+        // {
+        //     title: "How can I pay for my order?",
+        //     desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
+        // },
+        // {
+        //     title: "Is there a minimum order amount?",
+        //     desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
+        // },
+        // {
+        //     title: "How do I track my order?",
+        //     desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
+        // },
+        // {
+        //     title: "Can I schedule my delivery for later?",
+        //     desc: `Foodie Express is an online platform that connects you with a variety of restaurants in your area. Simply enter your location, browse the available menus, place your order, and enjoy delicious food delivered straight to your doorstep.`
+        // },
     ]
 
 
