@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import SecTestimonial from '../Components/Pages/SecTestimonial'
 import SecGetstart from '../Components/Pages/SecGetstart'
 import { useContextEvents } from '../context/EventsContext'
+import SecOptions from '../Components/Pages/SecOptions'
 
 const DetailEvent = () => {
     const { selectedEvent } = useContextEvents();
@@ -23,6 +24,7 @@ const DetailEvent = () => {
     if (!selectedEvent) {
         return <div>Event not found</div>;
     }
+    console.log({selectedEvent});
 
     const addToCart = (item, qty) => {
         const index = cartData.findIndex((cartItem) => cartItem.title === item.title);
@@ -47,34 +49,39 @@ const DetailEvent = () => {
 
     return (
         <Fragment>
-             <section className='bg-white g:pb-[80px] pb-0 mx-[16px] rounded-tl-[40px] rounded-tr-[40px]'>
+             <section className='bg-white pb-0 mx-[16px] rounded-tl-[40px] rounded-tr-[40px] mb-[100px]'>
                 <Container>
-                    <Row className='gap-y-6'>
-                        <Col md={6} className='my-auto'>
-                            <img src={selectedEvent.img} alt={selectedEvent.title} className="w-full rounded-[16px]" />
-                        </Col>
-                        <Col md={6} className='my-auto'>
-                            <h2 className='font-medium text__48 mb-3'>{selectedEvent.title}</h2>
-                            <p className='text__18 mb-3'>{selectedEvent.description}</p>
-                            <div className="flex items-center gap-4 mt-4">
-                                <div className="flex items-center gap-2">
-                                    <img src="./../images/location.png" alt="Location" />
-                                    <span className="text__14">{selectedEvent.distance}</span>
+                    <div className="max-w-[1000px] mx-auto">
+                        <Row className='gap-y-6'>
+                            <Col md={5} className='my-auto'>
+                                <img src={selectedEvent.img} alt={selectedEvent.title} className="w-full rounded-[16px]" />
+                            </Col>
+                            <Col md={6} className='my-auto ml-auto'>
+                                <h2 className='font-medium text__48 mb-3'>{selectedEvent.title}</h2>
+                                <p className='text__18 mb-3'>{selectedEvent.description}</p>
+                                <div className="flex items-center gap-4 mt-4">
+                                    <div className="flex items-center gap-2">
+                                        <img src="./../images/location.png" alt="Location" />
+                                        <span className="text__14">{selectedEvent.distance}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <img src="./../images/star.svg" alt="Time" />
+                                        <span className="text__14">{selectedEvent.time}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <img src="./../images/star.svg" alt="Rating" />
+                                        <span className="text__14">{selectedEvent.rating}</span>
+                                    </div>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <img src="./../images/time.png" alt="Time" />
-                                    <span className="text__14">{selectedEvent.time}</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <img src="./../images/star.png" alt="Rating" />
-                                    <span className="text__14">{selectedEvent.rating}</span>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>      
+                        <SecOptions options={selectedEvent.options} />
+                        <SecTestimonial />
+                        <div className="flex justify-center">
+                            <NavLink to="/payment" className={'cursor-pointer font-medium text__14 btnClass !px-[32px] text-white bg-Myellow'}>Book Now</NavLink>
+                        </div>
+                    </div>
                 </Container>
-                <SecTestimonial reviews={selectedEvent.reviews} />
-                <NavLink to="/payment" className={'inline-block w-full cursor-pointer font-medium text__14 btnClass !px-[32px] text-white bg-Mblack text-center'}>Book Now</NavLink>
             </section>
         </Fragment>
     )

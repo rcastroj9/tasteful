@@ -4,7 +4,8 @@
 
 html,
 body {
-    @apply text-base text-Mblack
+    @apply text-base text-Mblack;
+    zoom: 1.2;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .clamp-1 {

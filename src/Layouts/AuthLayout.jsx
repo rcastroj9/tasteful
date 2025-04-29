@@ -16,7 +16,6 @@ const AuthLayout = () => {
                 </div>
                 <div className='relative h-full bg-MsoftYellow hidden md:!block'>
                     <img src="./../images/001.svg" className='absolute left-0 top-0 w-full h-full object-cover' alt="" />
-                    <img src="./../images/18773771_5996682 1.png" className='absolute left-0 bottom-0 w-full object-cover' alt="" />
                 </div>
             </div>
         </Fragment>

@@ -16,11 +16,28 @@ export const EventsProvider = ({ children }) => {
             description: "Solve puzzles and challenges as a team in a fun and interactive escape room experience.",
             bookingDeadline: "4 days in advance",
             reviews: [
-                { reviewer: "Rick", comment: "A fantastic bonding experience for our team!", stars: 5 },
+                { reviewer: "Rick", comment: "A fantastic bonding experience for our team!", stars: 5, date: "2024-01-15" },
                 { reviewer: "Lucy", comment: "Great fun, but some puzzles were a bit tricky.", stars: 4 }
             ],
             rating: 4.5,
-            category: "Team Collaboration"
+            category: "Team Collaboration",
+            options: [
+                {
+                    name: "Standard",
+                    includes: ["Escape Room Experience"],
+                    budget: "$600"
+                },
+                {
+                    name: "With Food",
+                    includes: ["Escape Room Experience", "Snacks", "Soft Drinks"],
+                    budget: "$750"
+                },
+                {
+                    name: "With Food & Drinks",
+                    includes: ["Escape Room Experience", "Snacks", "Soft Drinks", "Alcoholic Drinks"],
+                    budget: "$900"
+                }
+            ]
         },
         {
             img: window.origin + "/images/sasffg.png",
@@ -38,7 +55,24 @@ export const EventsProvider = ({ children }) => {
                 { reviewer: "Maya", comment: "Facilities are good, but it's a bit expensive.", stars: 4 }
             ],
             rating: 4.2,
-            category: "Physical Activity"
+            category: "Physical Activity",
+            options: [
+                {
+                    name: "Basic",
+                    includes: ["Sports Facility Access"],
+                    budget: "$800"
+                },
+                {
+                    name: "With Food",
+                    includes: ["Sports Facility Access", "Buffet Lunch"],
+                    budget: "$950"
+                },
+                {
+                    name: "With Food & Drinks",
+                    includes: ["Sports Facility Access", "Buffet Lunch", "Soft Drinks"],
+                    budget: "$1050"
+                }
+            ]
         },
         {
             img: window.origin + "/images/sasffg.png",
@@ -56,7 +90,19 @@ export const EventsProvider = ({ children }) => {
                 { reviewer: "Tom", comment: "Great food, but I wish we had more time.", stars: 4 }
             ],
             rating: 4.7,
-            category: "Creative Collaboration"
+            category: "Creative Collaboration",
+            options: [
+                {
+                    name: "Standard",
+                    includes: ["Cooking Class", "Ingredients", "Soft Drinks"],
+                    budget: "$400"
+                },
+                {
+                    name: "With Alcoholic Drinks",
+                    includes: ["Cooking Class", "Ingredients", "Soft Drinks", "Wine Pairing"],
+                    budget: "$500"
+                }
+            ]
         },
         {
             img: window.origin + "/images/sasffg.png",
@@ -74,7 +120,19 @@ export const EventsProvider = ({ children }) => {
                 { reviewer: "Ben", comment: "Many game options, loved it!", stars: 5 }
             ],
             rating: 4.3,
-            category: "Communication"
+            category: "Communication",
+            options: [
+                {
+                    name: "Standard",
+                    includes: ["Board Games", "Snacks"],
+                    budget: "$350"
+                },
+                {
+                    name: "With Drinks",
+                    includes: ["Board Games", "Snacks", "Soft Drinks"],
+                    budget: "$400"
+                }
+            ]
         },
         {
             img: window.origin + "/images/sasffg.png",
@@ -92,7 +150,19 @@ export const EventsProvider = ({ children }) => {
                 { reviewer: "Mark", comment: "A bit crowded, but otherwise a lovely experience.", stars: 4 }
             ],
             rating: 4.6,
-            category: "Physical Activity"
+            category: "Physical Activity",
+            options: [
+                {
+                    name: "Standard",
+                    includes: ["Yoga Session", "Yoga Mats"],
+                    budget: "$250"
+                },
+                {
+                    name: "With Healthy Snacks",
+                    includes: ["Yoga Session", "Yoga Mats", "Healthy Snacks"],
+                    budget: "$300"
+                }
+            ]
         }
     ]);
 

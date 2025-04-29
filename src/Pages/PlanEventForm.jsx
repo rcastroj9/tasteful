@@ -14,19 +14,20 @@ const PlanEventForm = () => {
     return (
         <Fragment>
             <section className='-mt-[88px] lg:-mt-[98px] bg-[#F8F8F8]'>
-                <Container className='pt-[80px]'>
-                    <div className="p-6 bg-white rounded-[24px]">
+                <Container className='pt-[30px]'>
+                    <div className="p-12 bg-white rounded-[24px]">
                         <Row className='justify-between'>
-                            <Col className='mb-4 md:mb-0' md={4}>
-                                <h2 className='font-medium text__48 mb-3'>{FORM_CONTENT.title}</h2>
-                                <p className='text__18 text-[#525252]'>{FORM_CONTENT.description}</p>
+                            <Col className='mb-4 md:mb-0 items-center flex flex-col gap-4' md={4}>
+                                <h2 className='font-medium text__48 text-center'>Welcome to the Party Planning Committee!</h2>
+                                <p className='text__20 text-center'>{FORM_CONTENT.description}</p>
+                                <img src={window.origin + "/images/partyPlanningComitee.jpg"} alt="" />
 
                                 <div className="my-8">
                                     <p className='text__14 mb-2'>{FORM_CONTENT.assistance.text}</p>
-                                    <h5 className='font-medium text__20 text-Myellow'>{COMPANY.email}</h5>
+                                    <h5 className='font-medium text__16 text-Myellow'>{COMPANY.email}</h5>
                                 </div>
 
-                                <p className='text__14 mb-2'>{FORM_CONTENT.followUs}</p>
+                                {/* <p className='text__14 mb-2'>{FORM_CONTENT.followUs}</p> */}
                                 {/* ... existing social media links ... */}
                             </Col>
                             <Col md={7}>

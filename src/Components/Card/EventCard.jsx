@@ -223,21 +223,18 @@ export const CardEvent = (props) => {
 //     )
 // }
 
-export const CardEventTestimonial = (props) => {
+export const CardEventTestimonial = ({ review }) => {
     return (
         <Fragment>
             <div className="w-full bg-white p-4 rounded-[20px]">
                 <img src={window.origin + "/images/tik.svg"} className='mb-3' alt="" />
-                <h5 className='font-medium text__18 mb-2'>I was so grateful to have insurance when my car was totaled in an accident.</h5>
-                <p className="text__16">
-                    The insurance company handled everything quickly and efficiently, and I was able to get a new car without having to worry about the cost.
-                </p>
+                <h5 className='font-medium text__18 mb-2'>{review.comment}</h5>
 
                 <div className="my-3">
                     <div className="inline-block">
                         <div className="flex items-center gap-2 px-3 py-1 border border-solid !border-[#E5E5E5] rounded-full">
                             <img src={window.origin + "/images/star.svg"} alt="" />
-                            <span className='font-medium text__16'>5.0</span>
+                            <span className='font-medium text__16'>{review.stars}.0</span>
                         </div>
                     </div>
                 </div>
@@ -245,8 +242,8 @@ export const CardEventTestimonial = (props) => {
                 <div className="flex items-center gap-2">
                     <img src={window.origin + "/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
                     <div className="">
-                        <h5 className='font-medium text__18'>Skylar Siphron</h5>
-                        <p className='text__14'>Behance</p>
+                        <h5 className='font-medium text__18'>{review.reviewer}</h5>
+                        <p className='text__14'>{review.date}</p>
                     </div>
                 </div>
             </div>

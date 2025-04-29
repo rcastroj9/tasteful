@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { LogoIcon } from '../Icon/Icon'
+import { CheckCircleIcon } from '../Icon/Icon'
 import { COMPANY } from '../../config/constants'
 
 const Navbar = () => {
@@ -56,7 +56,8 @@ const Navbar = () => {
 
                     <NavLink to="/" className=''>
                         <div className="flex items-center gap-2">
-                            <LogoIcon />
+                            {/* <LogoIcon /> */}
+                            <CheckCircleIcon />
                             <span className={'font-medium text__20 text-Mblack'}>{COMPANY.name}</span>
                         </div>
                     </NavLink>
@@ -67,13 +68,13 @@ const Navbar = () => {
                             <NavLink to="/" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Plan Event</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>About</NavLink>
+                            {/* <NavLink to="/about" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>About</NavLink> */}
                         </li>
                         <li>
                             <NavLink to="/faq" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>FAQ</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Contact</NavLink>
+                            {/* <NavLink to="/contact" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Contact</NavLink> */}
                         </li>
                     </ul>
 
