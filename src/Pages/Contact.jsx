@@ -10,12 +10,22 @@ const Contact = () => {
                     <div className="p-6 bg-white rounded-[24px]">
                         <Row className='justify-between'>
                             <Col className='mb-4 md:mb-0' md={4}>
-                                <h2 className='font-medium text__48 mb-3'>We’d love to hear from you.</h2>
-                                <p className='text__18 text-[#525252]'>If you have any questions about the subscription or you are not sure which plan is right for you, please contact our team.</p>
+                                <h1 className='font-medium text__48 mb-3'>Get in Touch</h1>
+                                <p className='text__18 mb-6 lg:mb-12'>Have questions about our event planning services? We're here to help! <br className='xl:block hidden' /> Reach out to us for any inquiries about venues, event packages, or planning assistance.</p>
 
                                 <div className="my-8">
-                                    <p className='text__14 mb-2'>Don’t like forms?</p>
-                                    <h5 className='font-medium text__20 text-Myellow'>Customer@Company.com</h5>
+                                    <h5 className='font-medium text__20 text-Mblack mb-2'>Customer Support</h5>
+                                    <p className='text__16 text-Mblack'>Our dedicated support team is available 24/7 to assist you with any event planning needs.</p>
+                                </div>
+
+                                <div className="my-8">
+                                    <h5 className='font-medium text__20 text-Mblack mb-2'>Venue Partnerships</h5>
+                                    <p className='text__16 text-Mblack'>Interested in partnering with us? Contact our venue relations team to discuss collaboration opportunities.</p>
+                                </div>
+
+                                <div className="my-8">
+                                    <h5 className='font-medium text__20 text-Mblack mb-2'>Event Planning Services</h5>
+                                    <p className='text__16 text-Mblack'>Need help planning your next event? Our expert planners are ready to assist you.</p>
                                 </div>
 
                                 <p className='text__14 mb-2'>Social Media</p>

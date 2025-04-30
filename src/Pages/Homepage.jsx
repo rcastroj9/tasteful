@@ -27,7 +27,7 @@ const Homepage = () => {
                                 <h1 className='font-medium text__64 text-Mblack mb-3'>
                                     Bringing Flavor to Your Doorstep
                                 </h1>
-                                <p className='leading-[30px] text__18'>Our user-friendly food delivery platform is designed to bring you the best <br className='lg:block hidden' /> dining experience from the comfort of your home.</p>
+                                <p className='leading-[30px] text__18'>Our user-friendly event planning platform is designed to bring you the best <br className='lg:block hidden' /> event experience from the comfort of your home.</p>
                             </div>
 
 
@@ -53,8 +53,8 @@ const Homepage = () => {
                                         <img src={"/images/tp (3).svg"} className='w-[32px] sm:w-auto' alt="" />
                                     </div>
                                     <div className="w-full">
-                                        <h5 className='font-medium text__20 text-Mblack mb-2'>Your city's top restaurants</h5>
-                                        <p className='text__16 text-Mblack'>With a great variety of restaurants you can order your favourite food or explore new restaurants nearby!</p>
+                                        <h5 className='font-medium text__20 text-Mblack mb-2'>Your city's top venues</h5>
+                                        <p className='text__16 text-Mblack'>With a great variety of venues you can plan your perfect event or explore new locations nearby!</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ const Homepage = () => {
                         </Col>
                         <Col md={6} className='my-auto'>
                             <h2 className='font-medium text__48 mb-3'>Promotions and <br className='xl:block hidden' /> Discounts</h2>
-                            <p className='text__18 mb-6 lg:mb-12'>Save big with FoodieDelights' exclusive promotions! Discover <br className='xl:block hidden' /> discounts, special offers, and meal bundles tailored just for you. Keep <br className='xl:block hidden' /> an eye on our promotions section to enjoy mouthwatering meals <br className='xl:block hidden' /> while staying within your budget.</p>
+                            <p className='text__18 mb-6 lg:mb-12'>Save big with Tasteful Events' exclusive promotions! Discover <br className='xl:block hidden' /> discounts, special offers, and event packages tailored just for you. Keep <br className='xl:block hidden' /> an eye on our promotions section to enjoy unforgettable events <br className='xl:block hidden' /> while staying within your budget.</p>
                             <a href='/about' className="inline-block">
                                 <div className={'inline-block cursor-pointer font-medium text__14 btnClass !px-[32px]  !border-Mblack bg-Mblack text-white'}>Get Started</div>
                             </a>
@@ -126,7 +126,7 @@ const Homepage = () => {
                     <Row className='gap-y-6'>
                         <Col md={6} className='my-auto md:!order-1 order-2'>
                             <h2 className='font-medium text__48 mb-3'>Order for delivery or <br className='xl:block hidden' /> pickup.</h2>
-                            <p className='text__18 mb-6 lg:mb-12'>Stay in the loop with real-time order tracking. Receive updates on<br className='xl:block hidden' /> your order's preparation, dispatch, and estimated delivery time. Our<br className='xl:block hidden' /> notifications keep you informed, so you know exactly when your<br className='xl:block hidden' /> delicious meal will arrive at your door.</p>
+                            <p className='text__18 mb-6 lg:mb-12'>From venue selection to event execution, we've got you covered. <br className='xl:block hidden' /> Your perfect event is just a few clicks away.</p>
                             <a href='/about' className="inline-block">
                                 <div className={'inline-block cursor-pointer font-medium text__14 btnClass !px-[32px]  !border-Mblack bg-Mblack text-white'}>Get Started</div>
                             </a>

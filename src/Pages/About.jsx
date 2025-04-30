@@ -13,14 +13,28 @@ const About = () => {
                     <Row className='justify-center relative z-2'>
                         <Col md={10} className='text-center' >
                             <h5 className='font-medium text__18 text-Myellow mb-3'>ABOUT US</h5>
-                            <h1 className='font-medium text__64 text-Mblack mb-3 relative'>
-                                <img src={"/images/Vector (1).png"} className='absolute w-[50px] lg:w-auto right-0 md:-right-[4rem] -top-[4.5rem]' alt="" />
-                                <span className="relative">
-                                    <img src={"/images/Vector.png"} className='absolute -left-[3.5rem] -top-[2.5rem] w-[50px] lg:w-auto' alt="" />
-                                    <span className='relative z-2'>Where</span>
-                                </span> passion for food meets the ease of online ordering!
-                            </h1>
-                            <p className='leading-[30px] text__18'>At Foodie Express, we believe that everyone deserves a delicious, convenient, <br /> and satisfying dining experience.</p>
+                            <h1 className='font-medium text__48 mb-3'>About Us</h1>
+                            <p className='text__18 mb-6 lg:mb-12'>We're passionate about creating unforgettable events. Our platform connects you with the best venues and event planners in your city, making event planning simple and stress-free.</p>
+
+                            <div className="my-8">
+                                <h5 className='font-medium text__20 text-Mblack mb-2'>Our Mission</h5>
+                                <p className='text__16 text-Mblack'>To revolutionize event planning by providing a seamless platform that connects clients with top-tier venues and expert planners, ensuring every event is a success.</p>
+                            </div>
+
+                            <div className="my-8">
+                                <h5 className='font-medium text__20 text-Mblack mb-2'>Our Vision</h5>
+                                <p className='text__16 text-Mblack'>To become the leading event planning platform, known for exceptional service, innovative solutions, and creating memorable experiences for every client.</p>
+                            </div>
+
+                            <div className="my-8">
+                                <h5 className='font-medium text__20 text-Mblack mb-2'>Our Values</h5>
+                                <ul className='text__16 text-Mblack list-disc pl-5'>
+                                    <li>Excellence in event planning and execution</li>
+                                    <li>Innovation in creating unique event experiences</li>
+                                    <li>Integrity in all our partnerships and services</li>
+                                    <li>Customer satisfaction as our top priority</li>
+                                </ul>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
@@ -68,8 +82,8 @@ const About = () => {
                         </Col>
                         <Col md={6} className='my-auto'>
                             <h2 className='font-medium text__48 mb-3'>What Sets Us Apart</h2>
-                            <p className='text__18 mb-3'>At Foodie Express, we take pride in our commitment to quality, variety, and customer satisfaction. We partner with renowned restaurants, local eateries, and talented chefs to bring you an extensive menu of delectable dishes. </p>
-                            <p className='text__18'>From classic comfort foods to exotic international cuisines, we have something to please every palate. What sets us apart is not just the food we deliver but the experience we provide – seamless, reliable, and always delightful.</p>
+                            <p className='text__18 mb-3'>At Tasteful Events, we take pride in our commitment to quality, variety, and customer satisfaction. We partner with renowned venues, local vendors, and talented event planners to bring you an extensive selection of event services. </p>
+                            <p className='text__18'>From intimate gatherings to grand celebrations, we have something to suit every occasion. What sets us apart is not just the events we help create but the experience we provide – seamless, reliable, and always delightful.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -80,8 +94,8 @@ const About = () => {
                     <Row className='gap-y-6'>
                         <Col md={6} className='my-auto md:!order-1 order-2'>
                             <h2 className='font-medium text__48 mb-3'>Our Promise</h2>
-                            <p className='text__18 mb-3'>We promise to deliver more than just meals. We promise convenience on busy days, indulgence on special occasions, and a helping hand when you need it the most. With our user-friendly website and mobile app, you can browse menus, customize orders, and track deliveries with ease. </p>
-                            <p className='text__18'>Our dedicated team ensures that your food arrives fresh, hot, and right on time, making every meal memorable.</p>
+                            <p className='text__18 mb-3'>We promise to deliver more than just event planning. We promise convenience on busy days, perfection on special occasions, and a helping hand when you need it the most. With our user-friendly platform, you can browse venues, customize packages, and track your event progress with ease. </p>
+                            <p className='text__18'>Our dedicated team ensures that your event is executed flawlessly, making every moment memorable.</p>
                         </Col>
                         <Col md={6} className='my-auto order-1 md:!order-2'>
                             <img src={"/images/ab (2).png"} alt="" />
@@ -93,7 +107,7 @@ const About = () => {
 
             <SecTestimonial />
 
-            <SecGetstart title={"Join Our Foodie Community"} BtnLink={"/auth/login"} btnTitle={"Join Now"} />
+            <SecGetstart title={"Join Our Event Planning Community"} BtnLink={"/auth/login"} btnTitle={"Join Now"} />
 
         </Fragment>
     )
