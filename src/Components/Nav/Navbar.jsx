@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { CheckCircleIcon } from '../Icon/Icon'
 import { COMPANY } from '../../config/constants'
+import { LogoIcon } from '../Icon/Icon'
 
 const Navbar = () => {
 
@@ -57,7 +58,8 @@ const Navbar = () => {
                     <NavLink to="/" className=''>
                         <div className="flex items-center gap-2">
                             {/* <LogoIcon /> */}
-                            <CheckCircleIcon />
+                            <LogoIcon color='#FEC51C' />
+                            {/* <CheckCircleIcon /> */}
                             <span className={'font-medium text__20 text-Mblack'}>{COMPANY.name}</span>
                         </div>
                     </NavLink>

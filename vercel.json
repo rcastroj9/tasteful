@@ -20,6 +20,10 @@
       "dest": "/build/images/$1"
     },
     {
+      "src": "/auth/(.*)",
+      "dest": "/build/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/build/$1"
     }
