@@ -1,7 +1,5 @@
-import React, { Fragment, useEffect } from 'react'
-import { useState } from 'react'
+import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
-import { CheckCircleIcon } from '../Icon/Icon'
 import { MAX_QUOTE } from '../../config/constants'
 import { useContextEvents } from '../../context/EventsContext'
 

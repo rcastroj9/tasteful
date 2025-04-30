@@ -1,7 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react'
 import { LogoIcon } from '../../Components/Icon/Icon'
-import { Form } from 'react-bootstrap'
 import VerificationInput from 'react-verification-input'
 import { NavLink } from 'react-router-dom'
 import { COMPANY } from '../../config/constants'
