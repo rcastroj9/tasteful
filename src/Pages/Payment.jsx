@@ -112,8 +112,8 @@ const Payment = () => {
                             </Col>
                             <Col md={5} lg={4} xl={3}>
                                 <div className="w-full p-4 border !border-[#E5E5E5] rounded-[20px]">
-                                    <h4 className='font-medium text__20 mb-2'>Menú Durum</h4>
-                                    <p className='text__14 mb-3'>Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida</p>
+                                    {/* <h4 className='font-medium text__20 mb-2'>Menú Durum</h4> */}
+                                    {/* <p className='text__14 mb-3'>Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida</p> */}
                                     <div className="grid grid-cols-1 gap-3">
                                         <div className="flex items-center justify-between">
                                             <h5 className='text__16 text-[#525252]'>Quality</h5>

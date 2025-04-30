@@ -1,10 +1,10 @@
 import React from 'react'
 import { Fragment } from 'react'
+import Slider from 'react-slick'
 import { Container } from 'react-bootstrap'
 import { CardEventTestimonial } from '../Card/EventCard'
 import { useContextEvents } from '../../context/EventsContext'
 import { useEffect } from 'react'
-import Slider from 'react-slick'
 
 let COUNT = 0;
 
@@ -13,6 +13,7 @@ const SecTestimonial = React.memo(() => {
     console.log({selectedEvent});
     console.log({COUNT});
     COUNT++;
+    // console.log("first");
 
     useEffect(() => {
         console.log('SecTestimonial mounted');
@@ -29,16 +30,16 @@ const SecTestimonial = React.memo(() => {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 520,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
-            }
+            },
         ]
     };
 
@@ -48,16 +49,24 @@ const SecTestimonial = React.memo(() => {
 
     return (
         <Fragment>
-            <Container className="py-5">
-                <h2 className="text-center mb-4">Testimonials</h2>
-                <Slider {...settings}>
-                    {selectedEvent?.reviews?.map((review, index) => (
-                        <CardEventTestimonial key={index} review={review} />
-                    ))}
-                </Slider>
-            </Container>
+            <section className='bg-[#F8F8F8] rounded-xl m-8'>
+                <Container>
+                    <div className="mb-10 text-center">
+                        <h3 className='mb-10 font-medium text__48 mb-2'>Customer Reviews</h3>
+                    </div>
+                    <div className='flex justify-around'>   
+                        {selectedEvent.reviews.map((review, index) => {
+                                return (
+                                    <div key={`${review.reviewer}-${index}`} className="px-[15px]">
+                                    <CardEventTestimonial review={review} />
+                                </div>
+                            );
+                        })}
+                    </div>
+                </Container>
+            </section>
         </Fragment>
-    );
+    )
 });
 
-export default SecTestimonial;
+export default SecTestimonial
