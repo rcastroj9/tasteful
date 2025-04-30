@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Fragment } from 'react'
 import { Container } from 'react-bootstrap'
-
+import { NavLink } from 'react-router-dom'
 const SecOptions = ({ options }) => {
     const [activeOption, setActiveOption] = useState(0)
 
@@ -51,6 +51,9 @@ const SecOptions = ({ options }) => {
                                                 <div className='font-medium'>
                                                     Budget: <span className='text-Myellow'>{option.budget}</span>
                                                 </div>
+                                            </div>
+                                            <div className="flex justify-center">
+                                                <NavLink to="/payment" className={'cursor-pointer font-medium text__14 btnClass !px-[32px] text-white bg-Myellow'}>Let's book it!</NavLink>
                                             </div>
                                         </div>
                                     </div>

@@ -85,9 +85,6 @@ const DetailEvent = () => {
                         </Row>      
                         <SecOptions options={selectedEvent.options} />
                         <SecTestimonial />
-                        <div className="flex justify-center">
-                            <NavLink to="/" className={'cursor-pointer font-medium text__14 btnClass !px-[32px] text-white bg-Myellow'}>Book Now</NavLink>
-                        </div>
                     </div>
                 </Container>
             </section>

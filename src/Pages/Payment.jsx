@@ -16,11 +16,11 @@ const Payment = () => {
                     <div className="w-full p-4 rounded-[24px] bg-white">
                         <Row className='gap-y-4'>
                             <Col md={7} lg={8} xl={9}>
-                                <div className="flex items-center gap-1 mb-4">
+                                {/* <div className="flex items-center gap-1 mb-4">
                                     <a href='#!' className='normal text__16 text-[#A3A3A3]'>Istanbul Doner Kebab</a>
                                     <img src="/images/fsdfd.svg" alt="" />
                                     <h5 className='normal text__16'>Detail Order</h5>
-                                </div>
+                                </div> */}
 
                                 <div className="mb-4">
                                     <h5 className='font-medium text__16 mb-2'>Address</h5>

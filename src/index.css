@@ -38,7 +38,7 @@ section {
 
 /* start:btn */
 .btnClass {
-    @apply px-[24px] py-[12px] rounded-full border border-solid leading-6 inline-block
+    @apply px-[24px] py-[12px] rounded-full border-solid leading-6 inline-block
 }
 
 .btnClass.large {

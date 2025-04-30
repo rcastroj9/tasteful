@@ -157,11 +157,11 @@ export const EventsProvider = ({ children }) => {
                     includes: ["Yoga Session", "Yoga Mats"],
                     budget: "$250"
                 },
-                {
-                    name: "With Healthy Snacks",
-                    includes: ["Yoga Session", "Yoga Mats", "Healthy Snacks"],
-                    budget: "$300"
-                }
+                // {
+                //     name: "With Healthy Snacks",
+                //     includes: ["Yoga Session", "Yoga Mats", "Healthy Snacks"],
+                //     budget: "$300"
+                // }
             ]
         }
     ]);

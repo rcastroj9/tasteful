@@ -15,22 +15,26 @@ const PlanEventForm = () => {
         <Fragment>
             <section className='-mt-[88px] lg:-mt-[98px] bg-[#F8F8F8]'>
                 <Container className='pt-[30px]'>
-                    <p className='font-medium text-MsoftYellow text__14 text-center'>We are still on development stage, but please try our demo out!</p>
                     <div className="p-12 bg-white rounded-[24px]">
                         <Row className='justify-between'>
                             <Col className='mb-4 md:mb-0 items-center flex flex-col gap-4' md={4}>
-                                <h2 className='font-medium text__48 text-center'>Welcome to the Party Planning Committee!</h2>
-                                <p className='text__20 text-center'>{FORM_CONTENT.description}</p>
+                                <h2 className='font-medium text__48 text-center'>TeamOut AI</h2>
+                                <h3 className='text__40 text-Myellow text-center'>Plan your next team outing in less than 5 minutes.</h3>
+                                <p className='text__20 text-center'>Get your own event planner assistant. Whether it's a team dinner, happy hour, or fun activity, get the best options that fit your group size and budget. Easy for you to compare and choose.</p>
                                 <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/partyPlanningComitee-2LYqyZzc7dNexmOIQqGaeI3myUxPOE.jpg"} alt="" />
 
-                                <div className="my-8">
-                                    <p className='text__14 mb-2'>{FORM_CONTENT.assistance.text}</p>
-                                    <h5 className='font-medium text__16 text-Myellow'>{COMPANY.email}</h5>
+                                <div className="my-2">
+                                    <p className='text__14 mb-2'>Perfect for:</p>
+                                    <ul className='text__14 list-disc pl-5 space-y-2'>
+                                        <li>Department celebrations</li>
+                                        <li>Team building activities</li>
+                                        <li>Small group social events</li>
+                                        <li>Team dinners and happy hours</li>
+                                    </ul>
                                 </div>
-
+                            </Col>
                                 {/* <p className='text__14 mb-2'>{FORM_CONTENT.followUs}</p> */}
                                 {/* ... existing social media links ... */}
-                            </Col>
                             <Col md={7}>
                                 <Row>
                                     <Col className='col-6'>

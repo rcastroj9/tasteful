@@ -10,29 +10,28 @@ const About = () => {
                 <img src={"/images/001.svg"} className='absolute left-0 top-0 w-full h-full object-cover' alt="" />
                 <Container className='relative z-[2] w-full pt-[80px] relative'>
                     <img src={"/images/Burst-circle-1.png"} className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
-                    <Row className='justify-center relative z-2'>
-                        <Col md={10} className='text-center' >
-                            <h5 className='font-medium text__18 text-Myellow mb-3'>ABOUT US</h5>
+                    <Row className='justify-center relative z-2 pb-12'>
+                        <Col md={10} className='text-center bg-MsoftYellow rounded-[20px] p-12' >
                             <h1 className='font-medium text__48 mb-3'>About Us</h1>
-                            <p className='text__18 mb-6 lg:mb-12'>We're passionate about creating unforgettable events. Our platform connects you with the best venues and event planners in your city, making event planning simple and stress-free.</p>
+                            <p className='text__18 mb-6 lg:mb-12'>We're passionate about making team outings effortless. Our AI-powered platform helps you plan the perfect team gathering in minutes, connecting you with the best venues and activities that match your team's needs.</p>
 
                             <div className="my-8">
                                 <h5 className='font-medium text__20 text-Mblack mb-2'>Our Mission</h5>
-                                <p className='text__16 text-Mblack'>To revolutionize event planning by providing a seamless platform that connects clients with top-tier venues and expert planners, ensuring every event is a success.</p>
+                                <p className='text__16 text-Mblack'>To simplify team outing planning by providing an intelligent platform that matches teams with perfect venues and activities, ensuring every gathering is memorable and stress-free.</p>
                             </div>
 
                             <div className="my-8">
                                 <h5 className='font-medium text__20 text-Mblack mb-2'>Our Vision</h5>
-                                <p className='text__16 text-Mblack'>To become the leading event planning platform, known for exceptional service, innovative solutions, and creating memorable experiences for every client.</p>
+                                <p className='text__16 text-Mblack'>To become the go-to platform for team outings, known for making event planning quick, easy, and enjoyable for teams of all sizes.</p>
                             </div>
 
                             <div className="my-8">
                                 <h5 className='font-medium text__20 text-Mblack mb-2'>Our Values</h5>
-                                <ul className='text__16 text-Mblack list-disc pl-5'>
-                                    <li>Excellence in event planning and execution</li>
-                                    <li>Innovation in creating unique event experiences</li>
-                                    <li>Integrity in all our partnerships and services</li>
-                                    <li>Customer satisfaction as our top priority</li>
+                                <ul className='text__16 text-Mblack pl-5'>
+                                    <li>Speed and efficiency in planning</li>
+                                    <li>Personalized recommendations for every team</li>
+                                    <li>Quality venues and activities</li>
+                                    <li>Making team bonding easy and fun</li>
                                 </ul>
                             </div>
                         </Col>
@@ -40,7 +39,7 @@ const About = () => {
                 </Container>
             </section>
 
-            <section className='bg-Myellow py-[40px] md:py-[80px]'>
+            {/* <section className='bg-Myellow py-[40px] md:py-[80px]'>
                 <Container>
                     <div className="flex items-center flex-wrap lg:flex-nowrap justify-between gap-y-4 lg:gap-y-0">
                         <div className="w-[48%] lg:w-auto">
@@ -82,8 +81,8 @@ const About = () => {
                         </Col>
                         <Col md={6} className='my-auto'>
                             <h2 className='font-medium text__48 mb-3'>What Sets Us Apart</h2>
-                            <p className='text__18 mb-3'>At Tasteful Events, we take pride in our commitment to quality, variety, and customer satisfaction. We partner with renowned venues, local vendors, and talented event planners to bring you an extensive selection of event services. </p>
-                            <p className='text__18'>From intimate gatherings to grand celebrations, we have something to suit every occasion. What sets us apart is not just the events we help create but the experience we provide – seamless, reliable, and always delightful.</p>
+                            <p className='text__18 mb-3'>At TeamOut, we take pride in our commitment to making team outings simple and enjoyable. Our AI-powered platform analyzes your team's preferences and requirements to find the perfect match. </p>
+                            <p className='text__18'>From team dinners to department celebrations, we help you plan gatherings that strengthen team bonds. What sets us apart is not just the venues we connect you with, but the experience we provide – quick, reliable, and always tailored to your team's needs.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -94,15 +93,15 @@ const About = () => {
                     <Row className='gap-y-6'>
                         <Col md={6} className='my-auto md:!order-1 order-2'>
                             <h2 className='font-medium text__48 mb-3'>Our Promise</h2>
-                            <p className='text__18 mb-3'>We promise to deliver more than just event planning. We promise convenience on busy days, perfection on special occasions, and a helping hand when you need it the most. With our user-friendly platform, you can browse venues, customize packages, and track your event progress with ease. </p>
-                            <p className='text__18'>Our dedicated team ensures that your event is executed flawlessly, making every moment memorable.</p>
+                            <p className='text__18 mb-3'>We promise to make team outing planning effortless. Whether it's a last-minute team dinner or a planned department celebration, we'll help you find the perfect venue in minutes. </p>
+                            <p className='text__18'>Our AI-powered platform ensures you get the best options that fit your team size and budget, making every gathering memorable and stress-free.</p>
                         </Col>
                         <Col md={6} className='my-auto order-1 md:!order-2'>
                             <img src={"/images/ab (2).png"} alt="" />
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
 
 
             <SecTestimonial />

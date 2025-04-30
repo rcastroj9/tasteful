@@ -231,14 +231,14 @@ export const CardEventTestimonial = ({ review }) => {
                 <div className="my-3">
                     <div className="inline-block">
                         <div className="flex items-center gap-2 px-3 py-1 border border-solid !border-[#E5E5E5] rounded-full">
-                            <img src={"/images/star.svg"} alt="" />
+                            <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/star-RHPIajbLi0QDnvSlH6tZ4avIzyZIpv.svg"} alt="" />
                             <span className='font-medium text__16'>{review.stars}.0</span>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <img src={"/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
+                    <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/Avatar-FbkaqVTy5drI1HWNs3Kc6l1uUfCMpF.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
                     <div className="">
                         <h5 className='font-medium text__18'>{review.reviewer}</h5>
                         <p className='text__14'>{review.date}</p>
