@@ -69,15 +69,15 @@ const DetailEvent = () => {
                                 <p className='text__18 mb-3'>{selectedEvent.description}</p>
                                 <div className="flex items-center gap-4 mt-4">
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/location.png" alt="Location" />
+                                        <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/location-jJpvOyRdjo1wdCf8HGsrGlzuenQGMZ.png" alt="Location" />
                                         <span className="text__14">{selectedEvent.distance}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/star.svg" alt="Time" />
+                                        <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/star-RHPIajbLi0QDnvSlH6tZ4avIzyZIpv.svg" alt="Time" />
                                         <span className="text__14">{selectedEvent.time}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/star.svg" alt="Rating" />
+                                        <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/star-RHPIajbLi0QDnvSlH6tZ4avIzyZIpv.svg" alt="Rating" />
                                         <span className="text__14">{selectedEvent.rating}</span>
                                     </div>
                                 </div>

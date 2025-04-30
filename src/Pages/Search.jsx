@@ -265,7 +265,7 @@ const Search = () => {
                   <input type="text" className='w-full bg-transparent border-none outline-none hover:focus:active:border-none hover:focus:active:outline-none font-medium text__14 text-Mblack' placeholder='Search Food...' />
                 </div>
                 <div className="flex items-center justify-center h-[42px] gap-2 px-4 py-2 rounded-full bg-Myellow cursor-pointer">
-                  <img src="/images/search-normal.png" alt="" />
+                  <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/search-normal-fzkIMJJNLzUx4wg47e2jU9smC7ISbd.png" alt="" />
                   <div className='font-medium text__16'>Search</div>
                 </div>
               </div>
