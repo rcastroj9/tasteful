@@ -54,10 +54,10 @@ const SecTestimonial = React.memo(() => {
                     <div className="mb-10 text-center">
                         <h3 className='mb-10 font-medium text__48 mb-2'>Customer Reviews</h3>
                     </div>
-                    <div className='flex justify-around'>   
+                    <div className='flex justify-between px-14'>   
                         {selectedEvent.reviews.map((review, index) => {
                                 return (
-                                    <div key={`${review.reviewer}-${index}`} className="px-[15px]">
+                                <div key={`${review.reviewer}-${index}`} className="px-[15px] w-full">
                                     <CardEventTestimonial review={review} />
                                 </div>
                             );

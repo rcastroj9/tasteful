@@ -15,6 +15,7 @@ const PlanEventForm = () => {
         <Fragment>
             <section className='-mt-[88px] lg:-mt-[98px] bg-[#F8F8F8]'>
                 <Container className='pt-[30px]'>
+                    <p className='font-medium text-MsoftYellow text__14 text-center'>We are still on development stage, but please try our demo out!</p>
                     <div className="p-12 bg-white rounded-[24px]">
                         <Row className='justify-between'>
                             <Col className='mb-4 md:mb-0 items-center flex flex-col gap-4' md={4}>
