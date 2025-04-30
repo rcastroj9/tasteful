@@ -28,8 +28,8 @@ const Footer = () => {
                         <Col className='col-6 mb-4 mb-lg-0' lg={2}>
                             <h5 className='font-medium text__16 mb-3 text-[#A3A3A3]'>Link</h5>
                             <div className="flex flex-wrap gap-3 font-medium text__16">
-                                <NavLink to="/privacy" className='inline-block w-full text-Mblack'>Privacy Policy</NavLink>
-                                <NavLink to="/terms" className='inline-block w-full text-Mblack'>Terms & Conditions</NavLink>
+                                {/* <NavLink to="/privacy" className='inline-block w-full text-Mblack'>Privacy Policy</NavLink> */}
+                                {/* <NavLink to="/terms" className='inline-block w-full text-Mblack'>Terms & Conditions</NavLink> */}
                                 <NavLink to="/faq" className='inline-block w-full text-Mblack'>FAQs</NavLink>
                             </div>
                         </Col>
