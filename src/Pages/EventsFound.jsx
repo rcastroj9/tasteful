@@ -145,7 +145,7 @@ const Search = () => {
             <NavLink to="/" className=''>
               <div className="flex justify-around mb-4">
                 <div className="flex items-center justify-center h-[42px] gap-2 px-12 py-2 rounded-full bg-MsoftYellow cursor-pointer">
-                  <img src="./../images/search-normal.png" alt="" />
+                  <img src="/images/search-normal.png" alt="" />
                   <div className='font-medium text__20 text-Mgray'>Change Requirements</div>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const Search = () => {
                               <div className="flex items-center justify-between gap-2 relative">
                                 <input type="checkbox" id="vehicle1" name="filter1" value="Bike" className='absolute -z-[1] opacity-0 left-0 top-0' />
                                 <label for="filter1" onClick={() => updateFilterStatus(category.title, item.title)} className={'cursor-pointer w-[15px] h-[15px] rounded-[4px] relative checkboxFIlter ' + (item.status ? "active" : "")}>
-                                  <img src="./../images/check.png" className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
+                                  <img src="/images/check.png" className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
                                 </label>
                                 <label className='cursor-pointer text__12 text-[#171717] text-nowrap' for="filter1" onClick={() => updateFilterStatus(category.title, item.title)}>{item.title}</label>
                               </div>
@@ -198,7 +198,7 @@ const Search = () => {
 
                 <div className="flex items-center gap-2 px-4 py-2 border !border-[#E5E5E5] rounded-full lg:hidden cursor-pointer" onClick={()=>setToogleFilter(!ToogleFilter)}>
                   <p className='font-medium text__14'>Filter</p>
-                  <img src="./../images/filter.svg" alt="" />
+                  <img src="/images/filter.svg" alt="" />
                 </div>
               </div>
 

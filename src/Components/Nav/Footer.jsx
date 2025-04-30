@@ -41,8 +41,8 @@ const Footer = () => {
 
                             <h5 className='font-medium text__16 mb-3'>Download Now</h5>
                             <div className="flex items-center gap-4">
-                                <img src="./../images/sss (1).png" alt="" />
-                                <img src="./../images/sss (2).png" alt="" />
+                                <img src="/images/sss (1).png" alt="" />
+                                <img src="/images/sss (2).png" alt="" />
                             </div>
                         </Col>
                     </Row>
@@ -52,19 +52,19 @@ const Footer = () => {
 
                         <div className="flex justify-center items-center gap-3 w-auto">
                             <a href="#!">
-                                <img src="./../images/sos (1).svg" alt="" />
+                                <img src="/images/sos (1).svg" alt="" />
                             </a>
                             <a href="#!">
-                                <img src="./../images/sos (2).svg" alt="" />
+                                <img src="/images/sos (2).svg" alt="" />
                             </a>
                             <a href="#!">
-                                <img src="./../images/sos (3).svg" alt="" />
+                                <img src="/images/sos (3).svg" alt="" />
                             </a>
                             <a href="#!">
-                                <img src="./../images/sos (4).svg" alt="" />
+                                <img src="/images/sos (4).svg" alt="" />
                             </a>
                             <a href="#!">
-                                <img src="./../images/sos (5).svg" alt="" />
+                                <img src="/images/sos (5).svg" alt="" />
                             </a>
                         </div>
                     </div>

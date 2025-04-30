@@ -11,7 +11,7 @@ const DetailEvent = () => {
         {
             title: "Menú Durum",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (1).png",
+            img: "/images/fd (1).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,

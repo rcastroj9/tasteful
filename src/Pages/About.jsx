@@ -7,16 +7,16 @@ const About = () => {
     return (
         <Fragment>
             <section className='relative overflow-hidden min-h-screen pt-[88px] lg:pt-[98px] -mt-[88px] lg:-mt-[98px] bg-MsoftYellow flex flex-wrap pb-0'>
-                <img src={window.origin + "/images/001.svg"} className='absolute left-0 top-0 w-full h-full object-cover' alt="" />
+                <img src={"/images/001.svg"} className='absolute left-0 top-0 w-full h-full object-cover' alt="" />
                 <Container className='relative z-[2] w-full pt-[80px] relative'>
-                    <img src={window.origin + "/images/Burst-circle-1.png"} className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
+                    <img src={"/images/Burst-circle-1.png"} className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
                     <Row className='justify-center relative z-2'>
                         <Col md={10} className='text-center' >
                             <h5 className='font-medium text__18 text-Myellow mb-3'>ABOUT US</h5>
                             <h1 className='font-medium text__64 text-Mblack mb-3 relative'>
-                                <img src={window.origin + "/images/Vector (1).png"} className='absolute w-[50px] lg:w-auto right-0 md:-right-[4rem] -top-[4.5rem]' alt="" />
+                                <img src={"/images/Vector (1).png"} className='absolute w-[50px] lg:w-auto right-0 md:-right-[4rem] -top-[4.5rem]' alt="" />
                                 <span className="relative">
-                                    <img src={window.origin + "/images/Vector.png"} className='absolute -left-[3.5rem] -top-[2.5rem] w-[50px] lg:w-auto' alt="" />
+                                    <img src={"/images/Vector.png"} className='absolute -left-[3.5rem] -top-[2.5rem] w-[50px] lg:w-auto' alt="" />
                                     <span className='relative z-2'>Where</span>
                                 </span> passion for food meets the ease of online ordering!
                             </h1>
@@ -55,7 +55,7 @@ const About = () => {
                 <Container>
                     <div className="text-center">
                         <h2 className='font-medium text__48 mb-10 text-white'>+1.200 Cities in 20 Countries <br /> Across The Globe</h2>
-                        <img src={window.origin + "/images/map dark.svg"} className='w-full' alt="" />
+                        <img src={"/images/map dark.svg"} className='w-full' alt="" />
                     </div>
                 </Container>
             </section>
@@ -64,7 +64,7 @@ const About = () => {
                 <Container>
                     <Row className='gap-y-6'>
                         <Col md={6} className='my-auto'>
-                            <img src={window.origin + "/images/ab (1).png"} alt="" />
+                            <img src={"/images/ab (1).png"} alt="" />
                         </Col>
                         <Col md={6} className='my-auto'>
                             <h2 className='font-medium text__48 mb-3'>What Sets Us Apart</h2>
@@ -84,7 +84,7 @@ const About = () => {
                             <p className='text__18'>Our dedicated team ensures that your food arrives fresh, hot, and right on time, making every meal memorable.</p>
                         </Col>
                         <Col md={6} className='my-auto order-1 md:!order-2'>
-                            <img src={window.origin + "/images/ab (2).png"} alt="" />
+                            <img src={"/images/ab (2).png"} alt="" />
                         </Col>
                     </Row>
                 </Container>

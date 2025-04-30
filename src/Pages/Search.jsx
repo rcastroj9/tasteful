@@ -128,84 +128,84 @@ const Search = () => {
 
   const listFOod = [
     {
-      img: window.origin + "/images/fd (1).png",
+      img: "/images/fd (1).png",
       title: "La Bella Italia",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "160"
     },
     {
-      img: window.origin + "/images/fd (2).png",
+      img: "/images/fd (2).png",
       title: "Istanbul Doner Kebab",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (3).png",
+      img: "/images/fd (3).png",
       title: "Cedar Delights",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "120"
     },
     {
-      img: window.origin + "/images/fd (4).png",
+      img: "/images/fd (4).png",
       title: "Desert Rose Grill",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (5).png",
+      img: "/images/fd (5).png",
       title: "Cairo Spice Kitchen",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (6).png",
+      img: "/images/fd (6).png",
       title: "Majestic Mezze",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (7).png",
+      img: "/images/fd (7).png",
       title: "Cucina Italiana",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (8).png",
+      img: "/images/fd (8).png",
       title: "Pasta Perfection",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (9).png",
+      img: "/images/fd (9).png",
       title: "Bella Napoli",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (10).png",
+      img: "/images/fd (10).png",
       title: "Taste of Tuscany",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (11).png",
+      img: "/images/fd (11).png",
       title: "Sicilian Serenade",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
       like: "201"
     },
     {
-      img: window.origin + "/images/fd (12).png",
+      img: "/images/fd (12).png",
       title: "Roman Ristorante",
       distance: "1.2 km",
       time: "9:00 AM - 10:00 PM",
@@ -242,7 +242,7 @@ const Search = () => {
                               <div className="flex items-center justify-between gap-2 relative">
                                 <input type="checkbox" id="vehicle1" name="filter1" value="Bike" className='absolute -z-[1] opacity-0 left-0 top-0' />
                                 <label for="filter1" onClick={() => updateFilterStatus(category.title, item.title)} className={'cursor-pointer w-[20px] h-[20px] rounded-[4px] relative checkboxFIlter ' + (item.status ? "active" : "")}>
-                                  <img src="./../images/check.png" className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
+                                  <img src="/images/check.png" className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' alt="" />
                                 </label>
                                 <label className='cursor-pointer text__16 text-[#171717]' for="filter1" onClick={() => updateFilterStatus(category.title, item.title)}>{item.title}</label>
                               </div>
@@ -261,11 +261,11 @@ const Search = () => {
             <Col lg={9}>
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-[#E5E5E5] w-full">
-                  <img src="./../images/location.png" className='flex-shrink-0' alt="" />
+                  <img src="/images/location.png" className='flex-shrink-0' alt="" />
                   <input type="text" className='w-full bg-transparent border-none outline-none hover:focus:active:border-none hover:focus:active:outline-none font-medium text__14 text-Mblack' placeholder='Search Food...' />
                 </div>
                 <div className="flex items-center justify-center h-[42px] gap-2 px-4 py-2 rounded-full bg-Myellow cursor-pointer">
-                  <img src="./../images/search-normal.png" alt="" />
+                  <img src="/images/search-normal.png" alt="" />
                   <div className='font-medium text__16'>Search</div>
                 </div>
               </div>
@@ -278,7 +278,7 @@ const Search = () => {
 
                 <div className="flex items-center gap-2 px-4 py-2 border !border-[#E5E5E5] rounded-full lg:hidden cursor-pointer" onClick={()=>setToogleFilter(!ToogleFilter)}>
                   <p className='font-medium text__14'>Filter</p>
-                  <img src="./../images/filter.svg" alt="" />
+                  <img src="/images/filter.svg" alt="" />
                 </div>
               </div>
 

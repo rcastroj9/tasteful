@@ -101,7 +101,7 @@ const Login = ({ onEventClick, setStatusModal, handleClose }) => {
             <Form.Label className='font-normal text__14 text-[#A3A3A3]'>Password</Form.Label>
             <div className="relative">
                 <Form.Control type={tooglePassword ? "password" : "text"} placeholder="Must be at least 8 character" className='font-medium text__14 bg-[#FAFAFA] h-[54px] rounded-[20px] px-3 outline-none shadow-none focus:outline-none focus:shadow-none border-[#F5F5F5] focus:border-[#F5F5F5] focus:bg-[#FAFAFA]' />
-                <img onClick={() => settooglePassword(!tooglePassword)} src="./../../images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
+                <img onClick={() => settooglePassword(!tooglePassword)} src="././images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
             </div>
 
         </Form.Group>
@@ -112,7 +112,7 @@ const Login = ({ onEventClick, setStatusModal, handleClose }) => {
 
         <div className="mb-6 flex items-center gap-2 cursor-pointer" onClick={() => settoogleChecklist(!toogleChecklist)}>
             <div className={"flex items-center justify-center w-[24px] h-[24px] rounded-full border border-solid  " + (toogleChecklist ? "border-Myellow bg-Myellow bg-Myellow" : "border-[#A3A3A3]")}>
-                <img src="./../images/check (3).svg" className={toogleChecklist ? "opacity-100" : "opacity-0"} alt="" />
+                <img src="/images/check (3).svg" className={toogleChecklist ? "opacity-100" : "opacity-0"} alt="" />
             </div>
             <span className='text__14'>Opt out of emails about latest product updates</span>
         </div>
@@ -127,13 +127,13 @@ const Login = ({ onEventClick, setStatusModal, handleClose }) => {
 
             <div className="grid grid-cols-2 grid-rows-2 gap-3">
                 <a href='#!' className="relative inline-block px-3 py-[10px] w-full text-center rounded-[50px] border border-solid border-[#F5F5F5] ">
-                    <img src="./../images/Icon - Google.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
+                    <img src="/images/Icon - Google.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
                     <div className="relative z-2 font-medium text__14">
                         Google
                     </div>
                 </a>
                 <a href='#!' className="relative inline-block px-3 py-[10px] w-full text-center rounded-[50px] border border-solid border-[#F5F5F5] ">
-                    <img src="./../images/facebook-3-2 1.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
+                    <img src="/images/facebook-3-2 1.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
                     <div className="relative z-2 font-medium text__14">
                         Facebook
                     </div>
@@ -170,14 +170,14 @@ const Register = ({ onEventClick, setStatusModal, handleClose }) => {
             <Form.Label className='font-normal text__14 text-[#A3A3A3]'>Password</Form.Label>
             <div className="relative">
                 <Form.Control type={tooglePassword ? "password" : "text"} placeholder="Must be at least 8 character" className='font-medium text__14 bg-[#FAFAFA] h-[54px] rounded-[20px] px-3 outline-none shadow-none focus:outline-none focus:shadow-none border-[#F5F5F5] focus:border-[#F5F5F5] focus:bg-[#FAFAFA]' />
-                <img onClick={() => settooglePassword(!tooglePassword)} src="./../../images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
+                <img onClick={() => settooglePassword(!tooglePassword)} src="././images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
             </div>
 
         </Form.Group>
 
         <div className="mb-6 flex items-center gap-2 cursor-pointer" onClick={() => settoogleChecklist(!toogleChecklist)}>
             <div className={"flex items-center justify-center w-[24px] h-[24px] rounded-full border border-solid  " + (toogleChecklist ? "border-Myellow text-Myellow bg-Myellow text-Myellow" : "border-[#A3A3A3]")}>
-                <img src="./../images/check (3).svg" className={toogleChecklist ? "opacity-100" : "opacity-0"} alt="" />
+                <img src="/images/check (3).svg" className={toogleChecklist ? "opacity-100" : "opacity-0"} alt="" />
             </div>
             <span className='text__14'>Opt out of emails about latest product updates</span>
         </div>
@@ -192,13 +192,13 @@ const Register = ({ onEventClick, setStatusModal, handleClose }) => {
 
             <div className="grid grid-cols-2 grid-rows-2 gap-3">
                 <a href='#!' className="relative inline-block px-3 py-[10px] w-full text-center rounded-[50px] border border-solid border-[#F5F5F5] ">
-                    <img src="./../images/Icon - Google.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
+                    <img src="/images/Icon - Google.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
                     <div className="relative z-2 font-medium text__14">
                         Google
                     </div>
                 </a>
                 <a href='#!' className="relative inline-block px-3 py-[10px] w-full text-center rounded-[50px] border border-solid border-[#F5F5F5] ">
-                    <img src="./../images/facebook-3-2 1.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
+                    <img src="/images/facebook-3-2 1.svg" className='absolute left-[10px] top-1/2 -translate-y-1/2' alt="" />
                     <div className="relative z-2 font-medium text__14">
                         Facebook
                     </div>
@@ -288,7 +288,7 @@ const ResetPassword = ({ onEventClick, setStatusModal, handleClose }) => {
                 <Form.Label className='font-normal text__14 text-[#A3A3A3]'>Password<span className='text-[#ED544E]'>*</span></Form.Label>
                 <div className="relative">
                     <Form.Control type={tooglePassword ? "password" : "text"} placeholder="***************" className='font-medium text__14 bg-[#FAFAFA] h-[54px] rounded-[20px] px-3 outline-none shadow-none focus:outline-none focus:shadow-none border-[#F5F5F5] focus:border-[#F5F5F5] focus:bg-[#FAFAFA]' />
-                    <img onClick={() => settooglePassword(!tooglePassword)} src="./../../images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
+                    <img onClick={() => settooglePassword(!tooglePassword)} src="././images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
                 </div>
 
             </Form.Group>
@@ -296,7 +296,7 @@ const ResetPassword = ({ onEventClick, setStatusModal, handleClose }) => {
                 <Form.Label className='font-normal text__14 text-[#A3A3A3]'>New Password<span className='text-[#ED544E]'>*</span></Form.Label>
                 <div className="relative">
                     <Form.Control type={tooglePasswordRNew ? "password" : "text"} placeholder="***************" className='font-medium text__14 bg-[#FAFAFA] h-[54px] rounded-[20px] px-3 outline-none shadow-none focus:outline-none focus:shadow-none border-[#F5F5F5] focus:border-[#F5F5F5] focus:bg-[#FAFAFA]' />
-                    <img onClick={() => settooglePasswordRNew(!tooglePasswordRNew)} src="./../../images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
+                    <img onClick={() => settooglePasswordRNew(!tooglePasswordRNew)} src="././images/eye-slash.svg" className='cursor-pointer absolute top-1/2 -translate-y-1/2 right-4' alt="" />
                 </div>
 
             </Form.Group>

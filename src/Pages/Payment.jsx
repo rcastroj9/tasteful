@@ -18,7 +18,7 @@ const Payment = () => {
                             <Col md={7} lg={8} xl={9}>
                                 <div className="flex items-center gap-1 mb-4">
                                     <a href='#!' className='normal text__16 text-[#A3A3A3]'>Istanbul Doner Kebab</a>
-                                    <img src="./../images/fsdfd.svg" alt="" />
+                                    <img src="/images/fsdfd.svg" alt="" />
                                     <h5 className='normal text__16'>Detail Order</h5>
                                 </div>
 
@@ -27,7 +27,7 @@ const Payment = () => {
                                     <div className="w-full p-3 rounded-[20px] border !border-[#E5E5E5]">
                                         <div className="flex justify-between">
                                             <div className="flex items-start gap-2">
-                                                <img src="./../images/location.svg" alt="" />
+                                                <img src="/images/location.svg" alt="" />
                                                 <div className="">
                                                     <h5 className='font-medium text__16'>Jane Cooper</h5>
                                                     <p className='text__14 text-[#A3A3A3] my-1'>4517 Washington Ave. Manchester, Kentucky 39495</p>
@@ -52,7 +52,7 @@ const Payment = () => {
                                                 <input type="radio" id="PaymentPaypal" name="payment" value="paypal" className='absolute -z-[1] opacity-0 left-0 top-0 radioPayment' />
                                                 <label for="PaymentPaypal" className="p-3 w-full border !border-[#E5E5E5] rounded-[20px] flex items-center justify-between">
                                                     <div className="flex items-center gap-2">
-                                                        <img src="./../images/paypal.svg" alt="" />
+                                                        <img src="/images/paypal.svg" alt="" />
                                                         <p className='text__14 font-medium'>PayPal</p>
                                                     </div>
                                                     <label for="PaymentPaypal" className='cursor-pointer w-[20px] h-[20px] rounded-[100%] relative '>
@@ -66,7 +66,7 @@ const Payment = () => {
                                                 <input type="radio" id="PaymentApple" name="payment" value="apple pay" className='absolute -z-[1] opacity-0 left-0 top-0 radioPayment' />
                                                 <label for="PaymentApple" className="p-3 w-full border !border-[#E5E5E5] rounded-[20px] flex items-center justify-between">
                                                     <div className="flex items-center gap-2">
-                                                        <img src="./../images/applepay.svg" alt="" />
+                                                        <img src="/images/applepay.svg" alt="" />
                                                         <p className='text__14 font-medium'>Apple Pay</p>
                                                     </div>
                                                     <label for="PaymentApple" className='cursor-pointer w-[20px] h-[20px] rounded-[100%] relative '>

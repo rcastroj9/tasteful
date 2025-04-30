@@ -10,7 +10,7 @@ const DetailRestaurant = () => {
         {
             title: "Menú Durum",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (1).png",
+            img: "/images/fd (1).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -18,7 +18,7 @@ const DetailRestaurant = () => {
         {
             title: "Rice garnish in white plate",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (2).png",
+            img: "/images/fd (2).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -26,7 +26,7 @@ const DetailRestaurant = () => {
         {
             title: "Rice with carrot cooked",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (3).png",
+            img: "/images/fd (3).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -34,7 +34,7 @@ const DetailRestaurant = () => {
         {
             title: "Spiced chicken quarter",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (4).png",
+            img: "/images/fd (4).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -42,7 +42,7 @@ const DetailRestaurant = () => {
         {
             title: "Couscous and fresh salad",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (5).png",
+            img: "/images/fd (5).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -50,7 +50,7 @@ const DetailRestaurant = () => {
         {
             title: "National uzbek pilaf",
             desc: "Rollo de fina masa de pan de trigo, relleno de carne de pollo, ternera, mixto o falafel con patatas y bebida",
-            img: window.origin + "/images/fd (6).png",
+            img: "/images/fd (6).png",
             price: "10.00",
             discount: "-20%",
             quantity: 0,
@@ -86,7 +86,7 @@ const DetailRestaurant = () => {
                         <Col md={8} xl={9}>
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-[64px] h-[64px] rounded-full bg-[#171717] flex items-center justify-center">
-                                    <img src={window.origin + "/images/vegetables-salad.svg"} alt="" />
+                                    <img src={"/images/vegetables-salad.svg"} alt="" />
                                 </div>
                                 <div className="">
                                     <h4 className='font-medium text__24 mb-2'>Istanbul Doner</h4>
@@ -100,7 +100,7 @@ const DetailRestaurant = () => {
 
                             <div className="my-4">
                                 <div className="flex items-center gap-2 px-3 py-2 rounded-full border border-[#E5E5E5] w-full">
-                                    <img src="./../images/search-normal.svg" className='flex-shrink-0' alt="" />
+                                    <img src="/images/search-normal.svg" className='flex-shrink-0' alt="" />
                                     <input type="text" className='w-full bg-transparent border-none outline-none hover:focus:active:border-none hover:focus:active:outline-none font-medium text__14 text-Mblack' placeholder='Search...' />
                                 </div>
 
@@ -133,7 +133,7 @@ const DetailRestaurant = () => {
                                 <h4 className='text-center font-medium text__20 mb-3'>Your order</h4>
                                 {
                                     cartData.filter((item) => item.quantity > 0).length <= 0 ? <div className="">
-                                        <img src="./../images/Illustration.svg" className='mx-auto' alt="" />
+                                        <img src="/images/Illustration.svg" className='mx-auto' alt="" />
                                         <p className='mt-2 text__16 text-center'>You've not added any products yet. When you do, you'll see them here!</p>
                                     </div> : <div className="w-full">
                                         <div className="max-h-[350px] overflow-auto scrollStyle">

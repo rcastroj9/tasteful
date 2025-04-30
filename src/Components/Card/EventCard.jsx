@@ -42,14 +42,14 @@ import { useContextEvents } from '../../context/EventsContext'
 //                     <div className="flex items-center gap-2">
 //                         {
 //                             number > 0 ? <Fragment>
-//                                 <img src="./../images/Tab (1).svg" className='cursor-pointer' onClick={min} alt="" />
+//                                 <img src="/images/Tab (1).svg" className='cursor-pointer' onClick={min} alt="" />
 //                                 <div className="font-medium text__14 flex items-center justify-center w-[24px] h-[24px] rounded-full bg-[#F9F9F9]">
 //                                     {number}
 //                                 </div>
 //                             </Fragment> : ""
 //                         }
 
-//                         <img src="./../images/Tab.svg" className='cursor-pointer' onClick={add} alt="" />
+//                         <img src="/images/Tab.svg" className='cursor-pointer' onClick={add} alt="" />
 //                     </div>
 //                 </div>
 //             </div>
@@ -93,14 +93,14 @@ import { useContextEvents } from '../../context/EventsContext'
 //                     <div className="flex items-center gap-2">
 //                         {
 //                             number > 0 ? <Fragment>
-//                                 <img src="./../images/Tab (1).svg" className='cursor-pointer' onClick={min} alt="" />
+//                                 <img src="/images/Tab (1).svg" className='cursor-pointer' onClick={min} alt="" />
 //                                 <div className="font-medium text__14 flex items-center justify-center w-[24px] h-[24px] rounded-full bg-[#F9F9F9]">
 //                                     {number}
 //                                 </div>
 //                             </Fragment> : ""
 //                         }
 
-//                         <img src="./../images/Tab.svg" className='cursor-pointer' onClick={add} alt="" />
+//                         <img src="/images/Tab.svg" className='cursor-pointer' onClick={add} alt="" />
 //                     </div>
 //                 </div>
 //             </div>
@@ -194,7 +194,7 @@ export const CardEvent = (props) => {
 //     return (
 //         <Fragment>
 //             <div className="w-full bg-white p-4 rounded-[20px]">
-//                 <img src={window.origin + "/images/tik.svg"} className='mb-3' alt="" />
+//                 <img src={"/images/tik.svg"} className='mb-3' alt="" />
 //                 <h5 className='font-medium text__18 mb-2'>I was so grateful to have insurance when my car was totaled in an accident.</h5>
 //                 <p className="text__16">
 //                     The insurance company handled everything quickly and efficiently, and I was able to get a new car without having to worry about the cost.
@@ -203,14 +203,14 @@ export const CardEvent = (props) => {
 //                 <div className="my-3">
 //                     <div className="inline-block">
 //                         <div className="flex items-center gap-2 px-3 py-1 border border-solid !border-[#E5E5E5] rounded-full">
-//                             <img src={window.origin + "/images/star.svg"} alt="" />
+//                             <img src={"/images/star.svg"} alt="" />
 //                             <span className='font-medium text__16'>5.0</span>
 //                         </div>
 //                     </div>
 //                 </div>
 
 //                 <div className="flex items-center gap-2">
-//                     <img src={window.origin + "/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
+//                     <img src={"/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
 //                     <div className="">
 //                         <h5 className='font-medium text__18'>Skylar Siphron</h5>
 //                         <p className='text__14'>Behance</p>
@@ -225,20 +225,20 @@ export const CardEventTestimonial = ({ review }) => {
     return (
         <Fragment>
             <div className="w-full bg-white p-4 rounded-[20px]">
-                <img src={window.origin + "/images/tik.svg"} className='mb-3' alt="" />
+                <img src={"/images/tik.svg"} className='mb-3' alt="" />
                 <h5 className='font-medium text__18 mb-2'>{review.comment}</h5>
 
                 <div className="my-3">
                     <div className="inline-block">
                         <div className="flex items-center gap-2 px-3 py-1 border border-solid !border-[#E5E5E5] rounded-full">
-                            <img src={window.origin + "/images/star.svg"} alt="" />
+                            <img src={"/images/star.svg"} alt="" />
                             <span className='font-medium text__16'>{review.stars}.0</span>
                         </div>
                     </div>
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <img src={window.origin + "/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
+                    <img src={"/images/Avatar.png"} className='w-[48px] h-[48px] rounded-full object-cover' alt="" />
                     <div className="">
                         <h5 className='font-medium text__18'>{review.reviewer}</h5>
                         <p className='text__14'>{review.date}</p>

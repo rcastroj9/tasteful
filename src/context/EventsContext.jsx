@@ -5,7 +5,7 @@ const EventsContext = createContext();
 export const EventsProvider = ({ children }) => {
     const [events, setEvents] = useState([
         {
-            img: window.origin + "/images/sasffg.png",
+            img: "/images/sasffg.png",
             title: "Teamwork Escape Rooms",
             distance: "1.2 km",
             time: "10:00 AM - 10:00 PM",
@@ -40,7 +40,7 @@ export const EventsProvider = ({ children }) => {
             ]
         },
         {
-            img: window.origin + "/images/sasffg.png",
+            img: "/images/sasffg.png",
             title: "Active Sports Arena",
             distance: "1.5 km",
             time: "9:00 AM - 11:00 PM",
@@ -75,7 +75,7 @@ export const EventsProvider = ({ children }) => {
             ]
         },
         {
-            img: window.origin + "/images/sasffg.png",
+            img: "/images/sasffg.png",
             title: "Culinary Classes",
             distance: "0.8 km",
             time: "10:00 AM - 6:00 PM",
@@ -105,7 +105,7 @@ export const EventsProvider = ({ children }) => {
             ]
         },
         {
-            img: window.origin + "/images/sasffg.png",
+            img: "/images/sasffg.png",
             title: "The Game Room",
             distance: "1.0 km",
             time: "12:00 PM - 10:00 PM",
@@ -135,7 +135,7 @@ export const EventsProvider = ({ children }) => {
             ]
         },
         {
-            img: window.origin + "/images/sasffg.png",
+            img: "/images/sasffg.png",
             title: "Zen Yoga Studio",
             distance: "1.3 km",
             time: "6:00 AM - 9:00 PM",

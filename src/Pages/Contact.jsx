@@ -21,19 +21,19 @@ const Contact = () => {
                                 <p className='text__14 mb-2'>Social Media</p>
                                 <div className="flex items-center gap-2">
                                     <a href="#!">
-                                        <img src="./../images/sos (1).svg" alt="" />
+                                        <img src="/images/sos (1).svg" alt="" />
                                     </a>
                                     <a href="#!">
-                                        <img src="./../images/sos (2).svg" alt="" />
+                                        <img src="/images/sos (2).svg" alt="" />
                                     </a>
                                     <a href="#!">
-                                        <img src="./../images/sos (3).svg" alt="" />
+                                        <img src="/images/sos (3).svg" alt="" />
                                     </a>
                                     <a href="#!">
-                                        <img src="./../images/sos (4).svg" alt="" />
+                                        <img src="/images/sos (4).svg" alt="" />
                                     </a>
                                     <a href="#!">
-                                        <img src="./../images/sos (5).svg" alt="" />
+                                        <img src="/images/sos (5).svg" alt="" />
                                     </a>
                                 </div>
                             </Col>
