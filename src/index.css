@@ -5,7 +5,6 @@
 html,
 body {
     @apply text-base text-Mblack;
-    zoom: 1.2;
 }
 
 .container {

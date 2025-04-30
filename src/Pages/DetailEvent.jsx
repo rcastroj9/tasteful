@@ -61,15 +61,15 @@ const DetailEvent = () => {
                                 <p className='text__18 mb-3'>{selectedEvent.description}</p>
                                 <div className="flex items-center gap-4 mt-4">
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/location.png" alt="Location" />
+                                        <img src={window.origin + "/images/location.png"} alt="Location" />
                                         <span className="text__14">{selectedEvent.distance}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/star.svg" alt="Time" />
+                                        <img src={window.origin + "/images/star.svg"} alt="Time" />
                                         <span className="text__14">{selectedEvent.time}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <img src="./../images/star.svg" alt="Rating" />
+                                        <img src={window.origin + "/images/star.svg"} alt="Rating" />
                                         <span className="text__14">{selectedEvent.rating}</span>
                                     </div>
                                 </div>
