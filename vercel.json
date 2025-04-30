@@ -1,8 +1,9 @@
 {
   "version": 2,
+  "buildCommand": "npm run build && cp -r public/images build/",
   "builds": [
     {
-      "src": "package.json",
+      "src": "package.json", 
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build"
