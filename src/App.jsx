@@ -28,6 +28,7 @@ import PlanEventForm from './Pages/PlanEventForm';
 import EventsFound from './Pages/EventsFound';
 import DetailEvent from './Pages/DetailEvent';
 import { EventsProvider } from './context/EventsContext'
+import InitialPage from './Pages/InitialPage';
 
 const App = () => {
   let location = useLocation();
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="home"element={<Homepage />} />
           <Route path="about" element={<About />} />
           <Route path="faq" element={<Faq />} />
+          <Route path="initial" element={<InitialPage />} />
           <Route index element={<PlanEventForm />} />
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />

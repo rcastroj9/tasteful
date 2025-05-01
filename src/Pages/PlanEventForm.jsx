@@ -18,10 +18,12 @@ const PlanEventForm = () => {
                     <div className="p-12 bg-white rounded-[24px]">
                         <Row className='justify-between'>
                             <Col className='mb-4 md:mb-0 items-center flex flex-col gap-4' md={4}>
-                                <h2 className='font-medium text__48 text-center'>TeamOut AI</h2>
-                                <h3 className='text__40 text-Myellow text-center'>Plan your next team outing in less than 5 minutes.</h3>
-                                <p className='text__20 text-center'>Get your own event planner assistant. Whether it's a team dinner, happy hour, or fun activity, get the best options that fit your group size and budget. Easy for you to compare and choose.</p>
+                                {/* <h2 className='font-medium text__48 text-center'>{COMPANY.name}</h2> */}
+                                {/* <h3 className='text__40 text-Myellow text-center'>Plan your next team outing in less than 5 minutes.</h3> */}
+                                <p className='text__24 text-center leading-[30px]'>Your own team outing planner assistant </p>
+                                <p className='text__16 text-center '>Whether it's a team dinner, happy hour, or fun activity, get the best options that fit your group size and budget. Easy for you to compare and choose.</p>
                                 <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/partyPlanningComitee-2LYqyZzc7dNexmOIQqGaeI3myUxPOE.jpg"} alt="" />
+                                <NavLink to="/eventsFound" className="cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow">See Sample Events</NavLink>
 
                                 <div className="my-2">
                                     <p className='text__14 mb-2'>Perfect for:</p>

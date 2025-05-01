@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Container className='h-full'>
                     <ul className='list-none p-0 m-0 flex items-center flex-wrap gap-4 text-[20px] w-full'>
                         <li className='w-full'>
-                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Plan Your Event</NavLink>
+                            <NavLink to="/" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>Plan Event</NavLink>
                         </li>
                         <li className='w-full'>
                             <NavLink to="/about" onClick={() => setToogleMenuResponsive(!ToogleMenuResponsive)} className='font-medium text-Mblack'>About</NavLink>
@@ -51,16 +51,16 @@ const Navbar = () => {
                 </Container>
             </div>
 
-            <div className={'fixed py-4 w-full z-[999] left-0 top-0 ' + (navabarScroll ? "bg-MsoftYellow" : ToogleMenuResponsive ? "bg-MsoftYellow" : "bg-transparent")}>
+            <div className={'fixed py-4 w-full z-[999] left-0 top-0 bg-gradient-to-b from-MsoftYellow to-transparent' + (navabarScroll ? "bg-MsoftYellow" : ToogleMenuResponsive ? "bg-MsoftYellow" : "bg-transparent")}>
                 <Container className='relative flex items-center'>
 
 
-                    <NavLink to="/" className=''>
+                    <NavLink to="/initial" className=''>
                         <div className="flex items-center gap-2">
                             {/* <LogoIcon /> */}
                             <LogoIcon color='#FEC51C' />
-                            {/* <CheckCircleIcon /> */}
-                            <span className={'font-medium text__20 text-Mblack'}>{COMPANY.name}</span>
+                            {/* <CheckCircleIcon  /> */}
+                            <span className={'font-medium text-2xl text-Mblack'}>{COMPANY.name}</span>
                         </div>
                     </NavLink>
 

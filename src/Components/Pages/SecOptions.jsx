@@ -53,7 +53,7 @@ const SecOptions = ({ options }) => {
                                                 </div>
                                             </div>
                                             <div className="flex justify-center">
-                                                <NavLink to="/payment" className={'cursor-pointer font-medium text__14 btnClass !px-[32px] text-white bg-Myellow'}>Let's book it!</NavLink>
+                                                <NavLink to="/payment" className={'cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow'}>Let's book it!</NavLink>
                                             </div>
                                         </div>
                                     </div>

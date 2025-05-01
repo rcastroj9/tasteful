@@ -1,5 +1,5 @@
 export const COMPANY = {
-    name: "TeamOut AI",
+    name: "TeamOut.AI",
     email: "events@company.com",
     socialMedia: {
         // Add social media links here when needed
