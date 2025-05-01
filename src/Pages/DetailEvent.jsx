@@ -6,7 +6,8 @@ import { NavLink } from 'react-router-dom'
 import SecTestimonial from '../Components/Pages/SecTestimonial'
 import SecGetstart from '../Components/Pages/SecGetstart'
 import { useContextEvents } from '../context/EventsContext'
-import SecOptions from '../Components/Pages/SecOptions'
+import SecOptions from '../Components/Pages/SecOptions' 
+import SecCompare from './SecCompare'
 
 const DetailEvent = () => {
     const { selectedEvent } = useContextEvents();
@@ -82,8 +83,8 @@ const DetailEvent = () => {
                                     </div>
                                 </div>
                             </Col>
-                        </Row>      
-                        <SecOptions options={selectedEvent.options} />
+                        </Row>
+                        <SecCompare options={selectedEvent.options} />
                         <SecTestimonial />
                     </div>
                 </Container>

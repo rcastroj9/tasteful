@@ -23,7 +23,7 @@ const PlanEventForm = () => {
                                 <p className='text__24 text-center leading-[30px]'>Your own team outing planner assistant </p>
                                 <p className='text__16 text-center '>Whether it's a team dinner, happy hour, or fun activity, get the best options that fit your group size and budget. Easy for you to compare and choose.</p>
                                 <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/partyPlanningComitee-2LYqyZzc7dNexmOIQqGaeI3myUxPOE.jpg"} alt="" />
-                                <NavLink to="/eventsFound" className="cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow">See Sample Events</NavLink>
+                                <NavLink to="/eventsFound" className="cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow">View Sample Events</NavLink>
 
                                 <div className="my-2">
                                     <p className='text__14 mb-2'>Perfect for:</p>

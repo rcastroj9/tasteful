@@ -55,7 +55,7 @@ const Navbar = () => {
                 <Container className='relative flex items-center'>
 
 
-                    <NavLink to="/initial" className=''>
+                    <NavLink to="/" className=''>
                         <div className="flex items-center gap-2">
                             {/* <LogoIcon /> */}
                             <LogoIcon color='#FEC51C' />
@@ -67,7 +67,7 @@ const Navbar = () => {
 
                     <ul className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 list-none p-0 m-0 hidden lg:flex items-center gap-6 text__16'>
                         <li>
-                            <NavLink to="/" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Plan Event</NavLink>
+                            <NavLink to="/planEvent" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>Plan Event</NavLink>
                         </li>
                         <li>
                             {/* <NavLink to="/about" className={'font-medium ' + (navabarScroll ? "text-Mblack" : "text-Mblack")}>About</NavLink> */}

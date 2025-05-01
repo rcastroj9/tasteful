@@ -32,8 +32,8 @@ const InitialPage = () => {
           </div>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-2 mt-8">Plan a Team Outing<br />in <span className="text-Myellow">5 Minutes</span></h1>
-        <p className="text-lg md:text-2xl text-gray-700 mb-8">Your AI assistant will find, compare, and book the perfect outing for your team.</p>
-        <Link to="/" className="cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow">Get started</Link>
+        <p className="text-lg md:text-2xl text-gray-700 mb-8">Your AI assistant will find, quote and compare the perfect outing for your team.</p>
+        <Link to="/planEvent" className="cursor-pointer text__16 btnClass !px-[32px] text-white bg-Myellow">Get started</Link>
       </main>
     </div>
   );
