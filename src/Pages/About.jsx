@@ -106,7 +106,7 @@ const About = () => {
 
             <SecTestimonial />
 
-            <SecGetstart title={"Join Our Event Planning Community"} BtnLink={"/auth/login"} btnTitle={"Join Now"} />
+            {/* <SecGetstart title={"Join Our Event Planning Community"} BtnLink={"/auth/login"} btnTitle={"Join Now"} /> */}
 
         </Fragment>
     )

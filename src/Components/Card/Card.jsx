@@ -153,8 +153,8 @@ export const PriceListCard = (props) => {
 
             <ul className='flex gap-3 flex-wrap mb-10'>
                 {
-                    props.data.plan.map((obj) => {
-                        return <li className='w-full'>
+                    props.data.plan.map((obj, index) => {
+                        return <li className='w-full' key={index + "plan"}>
                             <div className="flex items-center gap-2">
                                 <CheckCircleIcon /> <span className='font-medium text__16'>{obj}</span>
                             </div>

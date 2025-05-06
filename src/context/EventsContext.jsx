@@ -15,6 +15,7 @@ export const EventsProvider = ({ children }) => {
             menuLink: "",
             description: "Solve puzzles and challenges as a team in a fun and interactive escape room experience.",
             bookingDeadline: "4 days in advance",
+            address: "123 Puzzle Lane, Downtown, San Francisco, CA 94105",
             reviews: [
                 { reviewer: "Rick", comment: "A fantastic bonding experience for our team!", stars: 5, date: "2024-01-15" },
                 { reviewer: "Lucy", comment: "Great fun, but some puzzles were a bit tricky.", stars: 4 }
@@ -50,6 +51,7 @@ export const EventsProvider = ({ children }) => {
             menuLink: "",
             description: "A facility offering a range of team sports activities, perfect for team-building exercises.",
             bookingDeadline: "5 days in advance",
+            address: "456 Sports Avenue, Mission District, San Francisco, CA 94110",
             reviews: [
                 { reviewer: "John", comment: "This place is excellent for team sports; we had a blast!", stars: 5 },
                 { reviewer: "Maya", comment: "Facilities are good, but it's a bit expensive.", stars: 4 }
@@ -85,6 +87,7 @@ export const EventsProvider = ({ children }) => {
             menuLink: "https://culinaryclasseswithchefmia.com/menu",
             description: "Learn to cook together in an interactive environment; ideal for team bonding.",
             bookingDeadline: "3 days in advance",
+            address: "789 Gourmet Street, North Beach, San Francisco, CA 94133",
             reviews: [
                 { reviewer: "Sara", comment: "The cooking class was fun and educational!", stars: 5 },
                 { reviewer: "Tom", comment: "Great food, but I wish we had more time.", stars: 4 }
@@ -115,6 +118,7 @@ export const EventsProvider = ({ children }) => {
             menuLink: "",
             description: "Enjoy a variety of board games and snacks, perfect for informal discussions and social engagement.",
             bookingDeadline: "2 days in advance",
+            address: "321 Boardwalk Boulevard, SoMa, San Francisco, CA 94107",
             reviews: [
                 { reviewer: "Katy", comment: "A great place to unwind and have fun with colleagues.", stars: 4 },
                 { reviewer: "Ben", comment: "Many game options, loved it!", stars: 5 }
@@ -145,6 +149,7 @@ export const EventsProvider = ({ children }) => {
             menuLink: "",
             description: "Relax and rejuvenate with group yoga sessions, promoting mindfulness and team wellness.",
             bookingDeadline: "2 days in advance",
+            address: "654 Serenity Street, Hayes Valley, San Francisco, CA 94102",
             reviews: [
                 { reviewer: "Claire", comment: "Perfect for team stress relief and relaxation.", stars: 5 },
                 { reviewer: "Mark", comment: "A bit crowded, but otherwise a lovely experience.", stars: 4 }

@@ -68,6 +68,7 @@ const DetailEvent = () => {
                             <Col md={6} className='my-auto ml-auto'>
                                 <h2 className='font-medium text__48 mb-3'>{selectedEvent.title}</h2>
                                 <p className='text__18 mb-3'>{selectedEvent.description}</p>
+                                <p className='text__14 mb-3'>{selectedEvent.address}</p>
                                 <div className="flex items-center gap-4 mt-4">
                                     <div className="flex items-center gap-2">
                                         <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/location-jJpvOyRdjo1wdCf8HGsrGlzuenQGMZ.png" alt="Location" />

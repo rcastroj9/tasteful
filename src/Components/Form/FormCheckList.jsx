@@ -2,7 +2,7 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import { FORM_CONTENT } from '../../config/constants';
 
-const FormCheckList = () => {
+const FormCheckList = ({ selectedDynamics, onDynamicChange }) => {
     return (
         <Form.Group className="mb-3" controlId="dynamics">
             <Form.Label className='font-normal text__14 text-Mblack'>
@@ -15,6 +15,8 @@ const FormCheckList = () => {
                         <Form.Check
                             type="checkbox"
                             id={dynamic.id}
+                            checked={selectedDynamics.includes(dynamic.id)}
+                            onChange={() => onDynamicChange(dynamic.id)}
                             label={
                                 <div>
                                     <span className="font-medium">{dynamic.title}</span>

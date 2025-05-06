@@ -18,12 +18,12 @@ export const FORM_CONTENT = {
     followUs: "Follow us",
     contextPlaceholder: "Tell us about your team and company, lovely to meet you!",
     teamDynamics: {
-        title: "What Team Dynamic are you looking to build?",
-        subtitle: "Select all that apply",
+        title: "Team Dynamics",
+        subtitle: "Select the type of team dynamics you're looking for",
         options: [
             {
-                id: "team-collaboration",
-                title: "1. Team Collaboration",
+                id: "TEAM_COLLABORATION",
+                title: "Team Collaboration",
                 activities: [
                     "Escape Rooms",
                     "Team Workshops",
@@ -32,8 +32,8 @@ export const FORM_CONTENT = {
                 ]
             },
             {
-                id: "physical-activity",
-                title: "2. Physical Activity",
+                id: "PHYSICAL_ACTIVITY",
+                title: "Physical Activity",
                 activities: [
                     "Bouldering or Rock Climbing",
                     "Team Sports (e.g., basketball, soccer)",
@@ -42,8 +42,8 @@ export const FORM_CONTENT = {
                 ]
             },
             {
-                id: "discussion-communication",
-                title: "3. Discussion and Communication",
+                id: "COMMUNICATION",
+                title: "Communication",
                 activities: [
                     "Board Game Nights",
                     "Round Table Discussions",
@@ -52,8 +52,8 @@ export const FORM_CONTENT = {
                 ]
             },
             {
-                id: "social-engagement",
-                title: "4. Social Engagement",
+                id: "SOCIAL_ENGAGEMENT",
+                title: "Social Engagement",
                 activities: [
                     "Happy Hours",
                     "Themed Parties or Celebrations",
@@ -62,8 +62,8 @@ export const FORM_CONTENT = {
                 ]
             },
             {
-                id: "creative-collaboration",
-                title: "5. Creative Collaboration",
+                id: "CREATIVE_COLLABORATION",
+                title: "Creative Collaboration",
                 activities: [
                     "Art or Craft Workshops",
                     "DIY Projects",
@@ -72,8 +72,8 @@ export const FORM_CONTENT = {
                 ]
             },
             {
-                id: "professional-development",
-                title: "6. Professional Development",
+                id: "PROFESSIONAL_DEVELOPMENT",
+                title: "Professional Development",
                 activities: [
                     "Guest Speaker Events",
                     "Skill-Building Workshops",

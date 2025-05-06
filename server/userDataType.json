@@ -1,0 +1,46 @@
+{
+    "User": {
+      "userID": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string"
+    },
+    "Event": {
+      "eventID": "string",
+      "userID": "string",
+      "venueName": "string",
+      "description": "string",
+      "distance": "number",          // in miles
+      "startTime": "string",         // e.g., "5:00 pm"
+      "eventLocation": "string",
+      "eventDuration": "number",     // in hours
+      "dates": ["string"],           // list of date strings, e.g., ["2025-05-10", "2025-05-11"]
+      "noOfPeople": "number",
+      "maxPeople": "number",
+      "rating": "number",
+      "contEmail": "string",
+      "contactName": "string",
+      "eventEvacuation": "string"
+    },
+    "Package": {
+      "packageID": "string",
+      "eventID": "string",
+      "packageName": "string",
+      "budget": "number",
+      "providers": "string",
+      "deposit": "number",
+      "picked": "boolean"
+    },
+    "EmailHistory": {
+      "emailHistoryID": "string",
+      "eventID": "string",
+      "emailSender": "string",
+      "emailResponse": "string",
+      "emailDates": [
+        {
+          "sent": "string",           // date/time sent
+          "response": "string"        // email response
+        }
+      ]
+    }
+  }

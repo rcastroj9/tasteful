@@ -42,16 +42,16 @@ const Footer = () => {
 
                             <h5 className='font-medium text__16 mb-3'>Download Our App</h5>
                             <div className="flex items-center gap-4">
-                                <img src="/images/sss (1).png" alt="App Store" />
-                                <img src="/images/sss (2).png" alt="Google Play" />
+                                <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/sss%20%281%29-CN4f9AuNovYOkZVs5hwnNaWFXhEadE.png" alt="App Store" />
+                                <img src="https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/sss%20%282%29-jjcaGGaozYu4BqF0Zv6N5fQKXN5Xnp.png" alt="Google Play" />
                             </div>
                         </Col>
                     </Row>
 
                     <div className="relative flex flex-wrap lg:flex-nowrap items-center justify-center md:justify-between gap-y-2 gap-x-4 bg-[#F5F5F5] px-4 py-2 rounded-full">
-                        <p className='text__16 text-[#A3A3A3]'>© 2022 Company Name® Global Inc.</p>
+                        <p className='text__16 text-[#A3A3A3]'>© 2025 Company Name® Global Inc.</p>
 
-                        <div className="flex justify-center items-center gap-3 w-auto">
+                        {/* <div className="flex justify-center items-center gap-3 w-auto">
                             <a href="#!">
                                 <img src="/images/sos (1).svg" alt="" />
                             </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                             <a href="#!">
                                 <img src="/images/sos (5).svg" alt="" />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </Container>
             </section>

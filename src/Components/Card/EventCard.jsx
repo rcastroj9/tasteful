@@ -225,7 +225,7 @@ export const CardEventTestimonial = ({ review }) => {
     return (
         <Fragment>
             <div className="w-full bg-white p-4 rounded-[20px]">
-                <img src={"/images/tik.svg"} className='mb-3' alt="" />
+                <img src={"https://bwwgddl6kxqlkkp1.public.blob.vercel-storage.com/images/tik-oe4Pngu6brpdKp0Ml3UtKOyFUnRD3O.svg"} className='mb-3' alt="" />
                 <h5 className='font-medium text__18 mb-2'>{review.comment}</h5>
 
                 <div className="my-3">

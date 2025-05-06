@@ -9,7 +9,7 @@ const Faq = () => {
             <div className="-mt-[88px] lg:-mt-[98px] bg-[#F8F8F8]">
                 <div className="pt-[88px] lg:pt-[98px] bg-[]">
                     <SecFaq />
-                    <SecGetstart title={"Join Our Foodie Community"} BtnLink={"/login"} btnTitle={"Join Now"} />
+                    {/* <SecGetstart title={"Join Our Foodie Community"} BtnLink={"/login"} btnTitle={"Join Now"} /> */}
                 </div>
             </div>
         </Fragment>

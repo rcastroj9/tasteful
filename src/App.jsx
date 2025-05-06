@@ -9,14 +9,11 @@ import { useEffect } from 'react';
 import DefaultLayout from './Layouts/DefaultLayout';
 import AuthLayout from './Layouts/AuthLayout';
 
-import Homepage from './Pages/Homepage';
 import About from './Pages/About';
 import Faq from './Pages/Faq';
 import Contact from './Pages/Contact';
 import Privacy from './Pages/Privacy';
 import Terms from './Pages/Terms';
-import Search from './Pages/Search';
-import DetailRestaurant from './Pages/DetailRestaurant';
 
 import Login from './Pages/Auth/Login';
 import Signup from './Pages/Auth/Signup';
@@ -29,6 +26,7 @@ import EventsFound from './Pages/EventsFound';
 import DetailEvent from './Pages/DetailEvent';
 import { EventsProvider } from './context/EventsContext'
 import InitialPage from './Pages/InitialPage';
+import Quotes from './Pages/Quotes';
 
 const App = () => {
   let location = useLocation();
@@ -39,7 +37,6 @@ const App = () => {
     <EventsProvider>
       <Routes>
         <Route path="" element={<DefaultLayout />}>
-          <Route path="home"element={<Homepage />} />
           <Route path="about" element={<About />} />
           <Route path="faq" element={<Faq />} />
           <Route index element={<InitialPage />} />
@@ -47,11 +44,10 @@ const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
-          <Route path="search" element={<Search />} />
           <Route path="eventsFound" element={<EventsFound />} />
-          <Route path="detail/restaurant" element={<DetailRestaurant />} />
           <Route path="detail/event" element={<DetailEvent />} />
           <Route path="payment" element={<Payment />} />
+          <Route path="quotes" element={<Quotes />} />
         </Route>
         <Route path="auth" element={<AuthLayout />}>
           <Route index element={<Login />} />
