@@ -8,52 +8,51 @@ import FormCheckList from '../Components/Form/FormCheckList'
 import { COMPANY, FORM_CONTENT } from '../config/constants'
 import { NavLink } from 'react-router-dom'
 
+
 const PlanEventForm = () => {
     const [selectedDates, setSelectedDates] = useState([])
     const [selectedDynamics, setSelectedDynamics] = useState([])
 
-    const handleStoreEvent = async () => {
+    const getInputValue = (id) => {
+        return document.getElementById(id).value;
+    };
+
+    const handleSubmit = async () => {
         try {
-            console.log("Dani");
             // Get the form data from your existing form fields
 
             const eventRequirements = {
                 dates: selectedDates,
-                numberOfGuests: document.getElementById('numberOfGuests').value,
-                maxBudget: document.getElementById('budget').value,
-                address: document.getElementById('address').value,
-                startTime: document.getElementById('time').value,
-                eventLength: document.getElementById('eventDuration').value,
+                startTime: getInputValue('time'),
+                timeZone: 'EST',
+                location: ['43.637633', '-79.399336'],
+                numberOfGuests: getInputValue('numberOfGuests'),
+                budget: getInputValue('budget'),
+                address: getInputValue('address'),
+                eventLength: getInputValue('eventDuration'),
                 teamDynamics: selectedDynamics,
             }
-
-            const formData = {
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
-                emailAddress: document.getElementById('emailAddress').value,
-                context: document.getElementById('context').value,
-                eventRequirements: eventRequirements,
-                eventQuotes: []
-            };
-            console.log(formData);
-
-            // Create the user data object for the API
+            
             const userData = {
-                emailAddress: formData.emailAddress,
-                firstName: formData.firstName,
-                lastName: formData.lastName,
-                context: formData.context,
-                eventRequirements: formData.eventRequirements,
+                firstName: getInputValue('firstName'),
+                lastName: getInputValue('lastName'),
+                emailAddress: getInputValue('emailAddress'),
+                companyContext: getInputValue('context'),
+                phoneNumber: '647989394',
+                eventRequirements: eventRequirements,
                 eventQuotes: []
             };
 
             // Make the API call
-            const response = await fetch('http://localhost:8000/api/users/', {
+            const response = await fetch('http://localhost:3000/api/users/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(userData)
+                body: JSON.stringify({
+                    user: userData,
+                    eventRequirements: eventRequirements
+                })
             });
 
             if (!response.ok) {
@@ -82,49 +81,50 @@ const PlanEventForm = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log("Dani");
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     console.log("Dani");
         
-        // const eventRequirements = {
-        //     people: parseInt(document.getElementById('people').value),
-        //     budget: parseFloat(document.getElementById('budget').value),
-        //     address: document.getElementById('address').value,
-        //     time: document.getElementById('time').value,
-        //     eventLength: parseInt(document.getElementById('eventLength').value),
-        //     teamDynamics: selectedDynamics
-        // };
+    //     // const eventRequirements = {
+    //     //     numberOfGuests: parseInt(document.getElementById('numberOfGuests').value),
+    //     //     budget: parseFloat(document.getElementById('budget').value),
+    //     //     address: document.getElementById('address').value,
+    //     //     time: document.getElementById('time').value,
+    //     //     eventLength: parseInt(document.getElementById('eventLength').value),
+    //     //     teamDynamics: selectedDynamics
+    //     // };
 
-        // const formData = {
-        //     emailAddress: document.getElementById('emailAddress').value,
-        //     firstName: document.getElementById('firstName').value,
-        //     lastName: document.getElementById('lastName').value,
-        //     context: document.getElementById('context').value,
-        //     eventRequirements: eventRequirements,
-        //     eventQuotes: []
-        // };
+    //     const formData = {
+    //         emailAddress: document.getElementById('emailAddress').value,
+    //         firstName: document.getElementById('firstName').value,
+    //         lastName: document.getElementById('lastName').value,
+    //         context: document.getElementById('context').value,
+    //         eventRequirements: [],
+    //         eventQuotes: []
+    //     };
+    //     console.log(formData);
 
-        // try {
-        //     const response = await fetch('http://localhost:8000/api/users/', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify(formData),
-        //     });
+    //     try {
+    //         const response = await fetch('http://localhost:3000/api/users/', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify(formData),
+    //         });
 
-        //     if (!response.ok) {
-        //         throw new Error('Failed to submit form');
-        //     }
+    //         if (!response.ok) {
+    //             throw new Error('Failed to submit form');
+    //         }
 
-        //     const data = await response.json();
-        //     console.log('Success:', data);
-        //     // Handle successful submission (e.g., show success message, redirect)
-        // } catch (error) {
-        //     console.error('Error:', error);
-        //     // Handle error (e.g., show error message)
-        // }
-    };
+    //         const data = await response.json();
+    //         console.log('Success:', data);
+    //         // Handle successful submission (e.g., show success message, redirect)
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //         // Handle error (e.g., show error message)
+    //     }
+    // };
 
     return (
         <Fragment>
@@ -272,7 +272,6 @@ const PlanEventForm = () => {
                                                 <p className='text-Mblack text__16 mb-8 md:mb-12'> Don't worry, we've got you covered! We'll gather the best quotes that fit your budget and all your needs—just sit back and we'll be in touch with you soon. </p>
                                                 <div className="text-center">
                                                     <div className="inline-block relative">
-                                                        {/* <button onClick={() => console.log("Dani")}>Click me</button> */}
                                                         <NavLink 
                                                             to="/eventsFound" 
                                                             onClick={handleSubmit} 
