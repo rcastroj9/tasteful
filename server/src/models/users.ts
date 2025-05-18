@@ -1,11 +1,11 @@
-import { IUser } from '../interfaces/User';
 import { Schema, model } from 'mongoose';
+import { IUser } from '../interfaces/User';
 
 export const userSchema = new Schema<IUser>({
-  firstName: { type: String, required: true},  
-  lastName: { type: String, required: true},
-  emailAddress: { type: String, required: true, unique: false}, //unique lowercase
-  companyContext: { type: String, required: true}, //max Characters
+  name: { type: String, required: true, unique: true },
+  emailAddress: { type: String, required: true, unique: false },
+  password: { type: String, required: true },
+  companyContext: { type: String, required: true },
   phoneNumber: { type: String, required: true },
   address: { 
     addressLine1: { type: String, required: false},

@@ -1,8 +1,12 @@
-import express, { Request, Response } from 'express';
-import { UserModel } from '../models/users';
+import express from 'express';
+import { userSignin, userSignup } from '../controllers/auth';
 import { bookTeamOutingEmailController, createTeamOutingController } from '../controllers/teamOuting';
+import { UserModel } from '../models/users';
 
 const router = express.Router();
+
+router.post('/api/userSignup', userSignup);
+router.get('/api/userSignin', userSignin);
 
 // Create a new team outing
 router.post('/', createTeamOutingController);
