@@ -1,9 +1,15 @@
-import { Schema, Types, model } from "mongoose";
+import { Schema, model } from "mongoose";
 import { ITeamOuting } from "../interfaces/TeamOuting";
 import { eventQuotesSchema } from "./eventQuotes";
 
+const RSVPEntrySchema = new Schema({
+  userId: { type: String, required: true },
+  status: { type: String, required: false },
+  dietaryRestrictions: { type: String, required: false },
+});
+
 const teamOutingSchema = new Schema<ITeamOuting>({
-    user: { type: Schema.Types.ObjectId, ref: 'User'}, //HERE I'M USING THE ID OF THE MODEL AS ONE USER CAN HAVE MULTIPLE TEAM OUTINGS AND CAN BE ON IT'S OWN 
+    user: { type: Schema.Types.ObjectId, ref: 'User'},
     eventRequirements: {
         dates: { type: [Date], required: true },
         time: { type: String, required: true },
@@ -15,7 +21,8 @@ const teamOutingSchema = new Schema<ITeamOuting>({
         additionalNotes: { type: String, required: false },
         teamDynamics: { type: [String], required: false}
       },  
-    eventQuotes: { type: [eventQuotesSchema], required: false }, //HERE I'M USING THE SCHEMA AS THERE CAN'T BE EVENT QUOTES ALONE AND ONLY BE PART OF THE TEAM OUTING
+    eventQuotes: { type: [eventQuotesSchema], required: false },
+    rsvps: [RSVPEntrySchema],
     createdAt: {type: Date, required: true },
     updatedAt: {type: Date, required: true }
 });

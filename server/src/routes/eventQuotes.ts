@@ -1,4 +1,5 @@
 import express from 'express';
+import { addRSVP, searchRSVPs } from '../controllers/rsvp';
 import { IEventQuote, IEventQuoteCreate } from '../interfaces/EventQuote';
 import { users_db } from '../models/users';
 
@@ -52,5 +53,8 @@ router.post('/', (req, res) => {
     res.status(500).json({ error: 'Failed to create event quote' });
   }
 });
+
+router.post('/rsvp/add', addRSVP);
+router.get('/rsvp/search', searchRSVPs);
 
 export default router; 

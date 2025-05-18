@@ -1,5 +1,5 @@
-import { IUser } from '../interfaces/User';
 import { Schema, model } from 'mongoose';
+import { IUser } from '../interfaces/User';
 
 export const userSchema = new Schema<IUser>({
   firstName: { type: String, required: true},  
@@ -17,6 +17,10 @@ export const userSchema = new Schema<IUser>({
     latitude: { type: Number, required: false},
     longitude: { type: Number, required: false}
   },
+  rsvpedEvents: [{
+    eventId: { type: String },
+    event: { type: Object }
+  }],
   createdAt: {type: Date, required: true },
   updatedAt: {type: Date, required: true }
 })
