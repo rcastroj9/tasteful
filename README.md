@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# TeamOut - AI-Powered Team Outing Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TeamOutAI helps plan and book team outings effortlessly. TeamOut streamlines the process of quoting team events by understanding your requirements and suggesting the perfect outing options.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🤖 AI-powered event planning and recommendations
+- 📅 Smart date and time scheduling
+- 📍 Location-based suggestions
+- 💰 Budget management
+- 👥 Team size optimization
+- 📧 Automated email notifications
+- 🎯 Customizable team dynamics preferences
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- TypeScript
+- Tailwind CSS
+- Modern UI/UX design
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB
+- AWS SQS for message queuing
+- Gemini AI for intelligent recommendations
+- Resend for email notifications
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you begin, ensure you have the following installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn
+- MongoDB
+- AWS Account (for SQS)
+- Google Cloud Account (for Gemini AI)
+- Resend Account (for email notifications)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Environment Variables
 
-### `npm run eject`
+Create a `.env` file in the root directory with the following variables:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+# Server
+PORT=3001
+MONGODB_URI=your_mongodb_uri
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# AWS
+AWS_SQS_URL=your_sqs_queue_url
+AWS_REGION=us-east-1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# AI
+GEMINI_API_KEY=your_gemini_api_key
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Email
+RESEND_API_KEY=your_resend_api_key
+```
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/yourusername/tasteful.git
+cd tasteful
+```
 
-### Code Splitting
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Install root dependencies
+npm install
 
-### Analyzing the Bundle Size
+# Install server dependencies
+cd server
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install client dependencies
+cd ../client
+npm install
+```
 
-### Making a Progressive Web App
+## Running the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Development Mode
 
-### Advanced Configuration
+1. Start the backend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd server
+npm run dev
+```
 
-### Deployment
+2. In a new terminal, start the frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd client
+npm start
+```
 
-### `npm run build` fails to minify
+The application will be available at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend: http://localhost:3000
+- Backend: http://localhost:3001
+
+### Production Build
+
+1. Build the frontend:
+
+```bash
+cd client
+npm run build
+```
+
+2. Start the production server:
+
+```bash
+cd server
+npm start
+```
+
+## Testing
+
+Run the test suite:
+
+```bash
+# Run all tests
+npm test
+
+# Run specific test file
+npm test -- path/to/test/file.test.ts
+```
+
+## Project Structure

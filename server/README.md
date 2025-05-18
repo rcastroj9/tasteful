@@ -83,11 +83,11 @@ Once the server is running, you can access:
 
 ### Users
 
-- `POST /api/users/` - Create a new user
-- `GET /api/users/` - Get all users
-- `GET /api/users/{user_id}` - Get a specific user
-- `PUT /api/users/{user_id}` - Update a user
-- `DELETE /api/users/{user_id}` - Delete a user
+- `POST /api/team-outs/` - Create a new user
+- `GET /api/team-outs/` - Get all team-outs
+- `GET /api/team-outs/{user_id}` - Get a specific user
+- `PUT /api/team-outs/{user_id}` - Update a user
+- `DELETE /api/team-outs/{user_id}` - Delete a user
 
 ### Events
 
