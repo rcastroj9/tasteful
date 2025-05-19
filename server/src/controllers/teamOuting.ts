@@ -1,10 +1,9 @@
-import { IUser } from "@/interfaces/User";
 import { IEventRequirements } from "@/interfaces/EventRequirements";
-import { UserModel } from "../models/users";
+import { IUser } from "@/interfaces/User";
 import { TeamOutingModel } from "@/models/teamOutings";
-import { generateEventEmail } from "@/utils/gemini"; 
 import { Request, Response } from 'express';
 import { Resend } from "resend";
+import { UserModel } from "../models/users";
 
 const resend = new Resend("re_Cninkv6b_7T6LJMZ5t8yZ6ABteVYpMUNp");
 
@@ -64,4 +63,22 @@ export const createTeamOutingController = async (req: Request, res: Response) =>
 
 export const bookTeamOutingEmailController = async (req: Request, res: Response) => {
   res.status(200).json({ status: 'Booked'});
+};
+
+export const getPaginatedEventQuotes = async (req: Request, res: Response) => {
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = parseInt(req.query.limit as string) || 10;
+  let eventQuotes;
+  let total;
+  setTimeout(() => {
+    TeamOutingModel.find({}, (err: any, docs: any) => {
+      if (err) {
+        res.status(500).json({ error: 'DB error' });
+        return;
+      }
+      total = docs.length;
+      eventQuotes = docs.slice((page - 1) * limit, page * limit);
+      res.json({ eventQuotes, total });
+    });
+  }, 0);
 };

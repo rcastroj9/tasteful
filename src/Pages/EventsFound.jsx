@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Fragment, useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import { CardEvent } from '../Components/Card/EventCard';
 import { useContextEvents } from '../context/EventsContext';
-import { NavLink } from 'react-router-dom';
 const Search = () => {
   const { events } = useContextEvents();
 
@@ -137,6 +137,23 @@ const Search = () => {
     return events.filter(event => selectedCategories.includes(event.category));
   };
 
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/event-quotes-list?page=${page}&limit=6`)
+      .then(res => res.json())
+      .then(data => {
+        events.length = 0;
+        data.eventQuotes.forEach(e => events.push(e));
+        setTotal(data.total);
+        setTimeout(() => setLoading(false), 1000);
+      })
+      .catch();
+  }, [page]);
+
   return (
     <Fragment>
       <section className='bg-[#F8F8F8] -mt-[88px] lg:-mt-[98px] pt-[100px]'>
@@ -203,7 +220,7 @@ const Search = () => {
               </div>
 
               <Row className='gap-y-6'>
-                {filteredEvents().map((obj) => (
+                {loading ? <div>Loading...</div> : filteredEvents().map((obj) => (
                   <Col md={4} key={obj.title}>
                     <CardEvent data={obj} />
                   </Col>
@@ -214,14 +231,14 @@ const Search = () => {
                 <nav aria-label="Page navigation example">
                   <ul className="pagination pagiantionMod gap-2">
                     <li className="page-item">
-                      <button className="page-link" aria-label="Previous">
+                      <button className="page-link" aria-label="Previous" onClick={() => setPage(page - 1)}>
                         <span aria-hidden="true">&laquo;</span>
                         <span className="sr-only">Previous</span>
                       </button>
                     </li>
-                    <li className="page-item active"><button className="page-link">1</button></li>
+                    <li className="page-item active"><button className="page-link">{page}</button></li>
                     <li className="page-item">
-                      <button className="page-link" aria-label="Next">
+                      <button className="page-link" aria-label="Next" onClick={() => setPage(page + 1)}>
                         <span aria-hidden="true">&raquo;</span>
                         <span className="sr-only">Next</span>
                       </button>

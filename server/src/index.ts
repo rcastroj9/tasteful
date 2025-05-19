@@ -1,9 +1,10 @@
-import express from 'express';
 import cors from 'cors';
+import express from 'express';
 import { createLogger, format, transports } from 'winston';
-import userRoutes from './routes/users';
-import eventQuotesRoutes from './routes/eventQuotes';
 import { connectDatabase } from './config/connection';
+import { getPaginatedEventQuotes } from './controllers/teamOuting';
+import eventQuotesRoutes from './routes/eventQuotes';
+import userRoutes from './routes/users';
 // Configure logging
 const logger = createLogger({
   level: 'info',
@@ -26,6 +27,8 @@ app.use(express.json());
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/event-quotes', eventQuotesRoutes);
+// app.get('/api/events', getPaginatedEvents);
+app.get('/api/event-quotes-list', getPaginatedEventQuotes);
 
 // Root endpoint
 app.get('/', (req, res) => {
