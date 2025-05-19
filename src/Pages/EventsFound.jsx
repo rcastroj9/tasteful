@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Fragment, useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import { CardEvent } from '../Components/Card/EventCard';
 import { useContextEvents } from '../context/EventsContext';
-import { NavLink } from 'react-router-dom';
 const Search = () => {
   const { events } = useContextEvents();
 
@@ -137,6 +137,41 @@ const Search = () => {
     return events.filter(event => selectedCategories.includes(event.category));
   };
 
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [pageSize, setPageSize] = useState(6);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/event-quotes-list?page=${page}&limit=${pageSize}`)
+      .then(res => res.json())
+      .then(data => {
+        events.length = 0;
+        data.eventQuotes.forEach(e => events.push(e));
+        setTotal(data.total);
+        setTimeout(() => setLoading(false), 1000);
+      })
+      .catch();
+  }, [page, pageSize]);
+
+  const handlePageSizeChange = (e) => {
+    setPageSize(Number(e.target.value));
+    setPage(1);
+  };
+
+  const handleRequestQuote = (id) => {
+    fetch('/api/eventQuotes', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ venueId: id, request: true })
+    })
+    .then(res => res.json())
+    .then(data => {
+      // do nothing
+    });
+  };
+
   return (
     <Fragment>
       <section className='bg-[#F8F8F8] -mt-[88px] lg:-mt-[98px] pt-[100px]'>
@@ -202,33 +237,29 @@ const Search = () => {
                 </div>
               </div>
 
+              <div className="flex items-center gap-4 mb-4">
+                <label>Page Size:</label>
+                <select value={pageSize} onChange={handlePageSizeChange}>
+                  <option value={3}>3</option>
+                  <option value={6}>6</option>
+                  <option value={12}>12</option>
+                  <option value={24}>24</option>
+                </select>
+                <button onClick={() => setPage(1)} disabled={page === 1}>First</button>
+                <button onClick={() => setPage(page - 1)}>Prev</button>
+                <span>Page {page} of {Math.ceil(total / pageSize)}</span>
+                <button onClick={() => setPage(page + 1)}>Next</button>
+                <button onClick={() => setPage(Math.ceil(total / pageSize))}>Last</button>
+              </div>
+
               <Row className='gap-y-6'>
-                {filteredEvents().map((obj) => (
+                {loading ? <div>Loading...</div> : filteredEvents().map((obj) => (
                   <Col md={4} key={obj.title}>
                     <CardEvent data={obj} />
+                    <button onClick={() => handleRequestQuote(obj._id)}>Request Quote</button>
                   </Col>
                 ))}
               </Row>
-
-              <div className="flex justify-center mt-4">
-                <nav aria-label="Page navigation example">
-                  <ul className="pagination pagiantionMod gap-2">
-                    <li className="page-item">
-                      <button className="page-link" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span className="sr-only">Previous</span>
-                      </button>
-                    </li>
-                    <li className="page-item active"><button className="page-link">1</button></li>
-                    <li className="page-item">
-                      <button className="page-link" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span className="sr-only">Next</span>
-                      </button>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
             </Col>
           </Row>
 
