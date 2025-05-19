@@ -53,4 +53,18 @@ router.post('/', (req, res) => {
   }
 });
 
+router.patch('/', (req, res) => {
+  const { venueId, request } = req.body;
+  Object.values(users_db).forEach(user => {
+    if (user.eventQuotes) {
+      user.eventQuotes.forEach(eq => {
+        if (eq._id == venueId) {
+          eq.requested = request;
+        }
+      });
+    }
+  });
+  res.json({ success: true });
+});
+
 export default router; 
